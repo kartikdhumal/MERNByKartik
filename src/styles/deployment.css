@@ -1,0 +1,157 @@
+:root {
+    --deploy-primary: #0F172A;
+    --deploy-secondary: #1E293B;
+    --deploy-accent: #38BDF8;
+    --deploy-success: #4ADE80;
+    --deploy-text: #F1F5F9;
+    --deploy-border: rgba(148, 163, 184, 0.1);
+}
+
+.deploy-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--deploy-primary);
+    border-radius: 16px;
+    color: var(--deploy-text);
+}
+
+.deploy-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--deploy-border);
+}
+
+.deploy-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--deploy-accent), var(--deploy-success));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.deploy-subtitle {
+    color: var(--deploy-text);
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+.checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.checklist-item {
+    background: var(--deploy-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--deploy-border);
+}
+
+.checklist-item h3 {
+    color: var(--deploy-accent);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.checklist-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist-item li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.checklist-item li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--deploy-success);
+}
+
+.code-block {
+    color: white !important;
+    background-color: black;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+.code-header {
+    background: #252525;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.code-block code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: white !important;
+    background-color: black;
+}
+
+.deployment-steps {
+    margin-top: 3rem;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.step-item {
+    background: var(--deploy-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--deploy-border);
+    transition: transform 0.3s ease;
+}
+
+.step-item:hover {
+    transform: translateY(-5px);
+}
+
+.terminal-block {
+    color: white !important;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.terminal-block code {
+    color: white !important;
+    background-color: black;
+    font-family: 'Fira Code', monospace;
+}
+
+@media (max-width: 768px) {
+    .deploy-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .deploy-title {
+        font-size: 2rem;
+    }
+
+    .checklist-grid,
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+}

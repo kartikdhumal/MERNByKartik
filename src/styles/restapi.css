@@ -1,0 +1,134 @@
+:root {
+    --rest-primary: #0F172A;
+    --rest-secondary: #1E293B;
+    --rest-accent: #60A5FA;
+    --rest-text: #F1F5F9;
+    --rest-border: rgba(148, 163, 184, 0.1);
+    --code-bg: #1A1A1A;
+}
+
+.rest-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--rest-primary);
+    border-radius: 16px;
+    color: var(--rest-text);
+}
+
+.rest-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--rest-border);
+}
+
+.rest-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--rest-accent), #818CF8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.rest-subtitle {
+    color: var(--rest-text);
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+.rest-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.theory-block,
+.implementation-block {
+    background: var(--rest-secondary);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--rest-border);
+}
+
+.section-title {
+    color: var(--rest-accent);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    color: var(--rest-text);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.code-editor {
+    color:white !important;
+    background-color:black;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header {
+    background: #252525;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.file-name {
+    color: #858585;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+.code-content {
+    padding: 1.5rem;
+}
+
+.code-content pre {
+    margin: 0;
+}
+
+.code-content code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color:white !important;
+    background-color:black;
+}
+
+@media (max-width: 768px) {
+    .rest-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .rest-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.theory-block,
+.implementation-block {
+    animation: fadeIn 0.5s ease-out forwards;
+}

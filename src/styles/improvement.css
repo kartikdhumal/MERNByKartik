@@ -1,0 +1,253 @@
+:root {
+  --primary-bg: #0F172A;
+  --card-bg: #1E293B;
+  --react-color: #61DAFB;
+  --js-color: #F7DF1E;
+  --db-color: #4DB33D;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --gradient-start: #0EA5E9;
+  --gradient-end: #2563EB;
+  --success-color: #10B981;
+  --warning-color: #F59E0B;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.com-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--primary-bg);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.com-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--text-secondary);
+  position: relative;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.interview-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--primary-bg);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.interview-main-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--text-secondary);
+  position: relative;
+}
+
+.interview-group {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--card-bg);
+  transition: all 0.3s ease;
+  border-left: 6px solid var(--gradient-start);
+  position: relative;
+  overflow: hidden;
+}
+
+.interview-group::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(14, 165, 233, 0.05), rgba(37, 99, 235, 0.05));
+  pointer-events: none;
+}
+
+.interview-section-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 2.2rem;
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.question-card {
+  background: var(--primary-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: var(--card-shadow);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.question-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
+  color: var(--text-primary);
+  background: linear-gradient(145deg, var(--primary-bg), var(--card-bg));
+}
+
+.question-card:hover::before {
+  opacity: 1;
+}
+
+/* Section-specific styles */
+.react .question-card {
+  border-left: 4px solid var(--react-color);
+}
+
+.javascript .question-card {
+  border-left: 4px solid var(--js-color);
+}
+
+.database .question-card {
+  border-left: 4px solid var(--db-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.interview-group {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .com-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .com-title {
+    font-size: 2rem;
+  }
+
+  .interview-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .interview-group {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .interview-section-title {
+    font-size: 1.7rem;
+  }
+
+  .questions-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .question-card {
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .com-container {
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .com-title {
+    font-size: 1.7rem;
+  }
+
+  .interview-main-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .com-list-item {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .com-strong {
+    font-size: 1.1rem;
+  }
+
+  .question-card {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .interview-group {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .interview-section-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Add smooth scrolling and selection styles */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--accent-color);
+  color: var(--primary-bg);
+}

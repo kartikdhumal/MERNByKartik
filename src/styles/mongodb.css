@@ -1,0 +1,86 @@
+.mongodb-documentation {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+background-color: #0F172A;
+    
+}
+
+.mongodb-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mongodb-subtitle {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.mongodb-doc ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.mongodb-doc li {
+    margin-bottom: 10px;
+}
+
+pre {
+    
+    padding: 15px;
+    border-radius: 5px;
+    overflow: auto;
+    color: #f8f8f2;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mongodb-documentation section {
+    scroll-margin-top: 80px;
+    /* Adjusts scroll position to account for fixed header */
+    padding: 2rem 0;
+}
+
+.mongodb-documentation h1,
+.mongodb-documentation h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.mongodb-documentation h1::after,
+.mongodb-documentation h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #4DB33D, #45a037);
+}
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Active section highlight */
+section:target {
+    animation: highlight 1s ease-out;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: rgba(77, 179, 61, 0.1);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}

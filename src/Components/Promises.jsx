@@ -1,0 +1,122 @@
+import React, { useEffect } from 'react';
+
+import 'prismjs/themes/prism.css';
+import '../styles/promises.css';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+function Promises() {
+  useEffect(() => {
+
+    window.scrollTo(0,0);
+  }, []);
+
+  return (
+    <div className="promises-container">
+      <h1>Promises in JavaScript</h1>
+      <p>A Promise is an object representing the eventual completion or failure of an asynchronous operation.</p>
+
+      <h2>Promise Constructor</h2>
+      <p>
+        The promise constructor takes only one argument, which is a callback function.
+        The callback function takes two arguments: <SyntaxHighlighter language="javascript" style={atomDark}>resolve</SyntaxHighlighter> and <SyntaxHighlighter language="javascript" style={atomDark}>reject</SyntaxHighlighter>.
+      </p>
+      
+        <SyntaxHighlighter language="javascript" style={atomDark}>
+          {`const promise = new Promise((resolve, reject) => {
+  // Perform operations
+  if (success) {
+    resolve('Success!');
+  } else {
+    reject('Failure!');
+  }
+});`}
+        </SyntaxHighlighter>
+      
+
+      <h2>Promise States</h2>
+      <ul>
+        <li><strong>Fulfilled:</strong> Action related to the promise succeeded</li>
+        <li><strong>Rejected:</strong> Action related to the promise failed</li>
+        <li><strong>Pending:</strong> Promise is still pending (not fulfilled or rejected)</li>
+      </ul>
+
+      <h2>Promise Methods</h2>
+
+      <h3>1. Promise.all()</h3>
+      <p>
+        <strong>Definition:</strong> Promise.all() takes an iterable of promises and returns a single promise that resolves when all of the promises in the iterable have resolved, or rejects if any of the promises reject.
+      </p>
+      <h2>
+        If all true then resolves with an array of resolved values else will return first rejected promise
+      </h2>
+      
+        <SyntaxHighlighter language="javascript" style={atomDark}>
+          {`Promise.all([promise1,promise2,promise3])
+  .then(values => {
+    // All promises resolved
+  })
+  .catch(error => {
+    // At least one promise rejected
+  });`}
+        </SyntaxHighlighter>
+      
+
+      <h3>2. Promise.race()</h3>
+      <p>
+        <strong>Definition:</strong> Promise.race() returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects, with the value or reason from that promise.
+      </p>
+      <h2>
+        It always resolves with an array of objects that each describe the outcome of each promise.
+      </h2>
+      
+        <SyntaxHighlighter language="javascript" style={atomDark}>
+          {`Promise.race([promise1,promise2,promise3])
+  .then(value => {
+    // First resolved or rejected promise
+  })
+  .catch(error => {
+    // First rejected promise
+  });`}
+        </SyntaxHighlighter>
+      
+
+      <h3>3. Promise.allSettled()</h3>
+      <p>
+        <strong>Definition:</strong> Promise.allSettled() returns a promise that resolves after all of the given promises have either resolved or rejected. It provides an array of objects describing the outcome of each promise.
+      </p>
+      <h2>
+        It will return the first promise no matter it is resolved or rejected
+      </h2>
+      
+        <SyntaxHighlighter language="javascript" style={atomDark}>
+          {`Promise.allSettled([promise1,promise2,promise3])
+  .then(results => {
+    // Array of outcome objects
+  });`}
+        </SyntaxHighlighter>
+      
+
+      <h3>4. Promise.any()</h3>
+      <p>
+        <strong>Definition:</strong> Promise.any() returns a promise that resolves as soon as any of the given promises fulfill. If no promises fulfill, it rejects with an AggregateError, grouping all rejection reasons.
+      </p>
+      <h2>
+        with the value from that promise. If none of the promises resolve, it rejects with an AggregateError containing all the rejection reasons.
+      </h2>
+      
+        <SyntaxHighlighter language="javascript" style={atomDark}>
+          {`Promise.any([promise1,promise2,promise3])
+  .then(value => {
+    // First resolved promise
+  })
+  .catch(errors => {
+    // All promises rejected
+  });`}
+        </SyntaxHighlighter>
+      
+    </div>
+  );
+}
+
+export default Promises;

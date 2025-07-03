@@ -1,0 +1,62 @@
+.dom-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Slightly larger title for emphasis */
+    color: #333; /* Darker color for better readability */
+}
+
+.method-section {
+    margin-bottom: 30px;
+    border: 1px solid #ddd; /* Add a border around each section */
+    border-radius: 5px; /* Rounded corners for each method section */
+    padding: 15px; /* Padding inside each method section */
+}
+
+.description {
+    font-size: 22px; /* Slightly larger h3 for method names */
+    color: rgb(237, 215, 186);
+    padding: 10px 0;
+}
+
+.method-title {
+    font-size: 1.8em; /* Adjusted for consistency with your design */
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    color: gold;
+}
+
+.code-block {
+    background-color: #f8f8f8; /* Similar to closures */
+    padding: 15px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    border: 1px solid #ccc; /* Border to distinguish code blocks */
+}
+
+/* Additional styles for a responsive design */
+@media (max-width: 600px) {
+    .dom-docs-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .title {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+
+    .method-title {
+        font-size: 1.5em; /* Smaller titles on mobile */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjust h3 size for mobile */
+    }
+}

@@ -1,0 +1,34 @@
+.lazy-loading-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color:#0F172A;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lazy-loading-container h1 {
+    color: #baf026 !important;
+  }
+  
+  .lazy-loading-container h2, .lazy-loading-container h3 {
+    color: #007bff !important;
+  }
+  
+  .lazy-loading-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #c3c175;
+  }
+  
+  .lazy-loading-container ul, .lazy-loading-container ol {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  
+  .lazy-loading-container li {
+    margin-bottom: 10px;
+  }
+
+  
