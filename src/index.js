@@ -65,6 +65,7 @@ import NodeAPIs from './Components/NodeJS/RestAPI';
 import NodeDeployment from './Components/NodeJS/Deployment';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 import Debouncing from './Components/Debouncing';
+import ErrorBoundaryInfo from './Components/ErrorBoundaryInfo';
 
 const LazyLoading = lazy(() => import('./Components/LazyLoading'));
 
@@ -221,6 +222,10 @@ export const myRouter = createBrowserRouter([
   {
     path: '/nodejs-mongodb',
     element: <NodeMongoDB />,
+  },
+   {
+    path: '/errorboundary',
+    element: <ErrorBoundaryInfo />,
   },
   {
     path: '/nodejs-apis',

@@ -35,10 +35,10 @@ function JavascriptEngine() {
       <div className="method-section">
         <h3>Advantages of JavaScript</h3>
         <ul>
-          <li><strong>Enhanced User Experience:</strong> Enables interactive and dynamic web experiences, improving user engagement and satisfaction.</li>
-          <li><strong>Versatility:</strong> Can be used for a wide range of tasks, from simple DOM manipulation to complex web applications and games.</li>
-          <li><strong>Reduced Server Load:</strong> Offloading tasks to the client-side can reduce the burden on servers, leading to faster and more scalable web applications.</li>
-          <li><strong>Extensive Ecosystem:</strong> Has a vast ecosystem of libraries, frameworks, and tools, making it easy for developers to build and maintain complex web applications.</li>
+          <li>Enhanced User Experience: Enables interactive and dynamic web experiences, improving user engagement and satisfaction.</li>
+          <li>Versatility: Can be used for a wide range of tasks, from simple DOM manipulation to complex web applications and games.</li>
+          <li>Reduced Server Load: Offloading tasks to the client-side can reduce the burden on servers, leading to faster and more scalable web applications.</li>
+          <li>Extensive Ecosystem: Has a vast ecosystem of libraries, frameworks, and tools, making it easy for developers to build and maintain complex web applications.</li>
         </ul>
       </div>
 

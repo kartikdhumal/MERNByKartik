@@ -16,9 +16,9 @@ function Component() {
       </p>
 
       <h2 className="com-subtitle">Types of Components</h2>
-      <ul className="com-list">
-        <li className="com-list-item">
-          <strong className="com-strong">Functional Components:</strong> These are JavaScript functions that return JSX. They can accept props as arguments and return a React element. Functional components are also known as stateless components because they do not manage their own state.
+      <div className="com-list">
+        <div className="com-list-item">
+          Functional Components: These are JavaScript functions that return JSX. They can accept props as arguments and return a React element. Functional components are also known as stateless components because they do not manage their own state.
           <SyntaxHighlighter language="javascript" style={atomDark}>
             {`
 import React, { useState } from 'react';
@@ -35,23 +35,23 @@ return (
 }
             `}
           </SyntaxHighlighter>
-        </li>
-        <li className="com-list-item">
-          <strong className="com-strong">Class Components:</strong>
-          <p>These are ES6 classes that extend from <SyntaxHighlighter language="javascript" style={atomDark}>React.Component</SyntaxHighlighter>. They can manage their own state and lifecycle methods. Class components are also known as stateful components.</p>
+        </div>
+        <div className="com-list-item">
+          Class Components:
+          <p>These are ES6 classes that extend from React.Component . They can manage their own state and lifecycle methods. Class components are also known as stateful components.</p>
 
           <p>Common lifecycle methods used in class components include:</p>
-          <ul>
-            <li>
-              <strong>componentDidMount</strong>: This method is called once the component has been rendered in the DOM. It is typically used for initiating network requests, subscriptions, or any other side effects.
-            </li>
-            <li>
-              <strong>componentDidUpdate</strong>: This method is called after the component has been updated. It is useful for responding to prop or state changes, such as making network requests based on the updated state.
-            </li>
-            <li>
-              <strong>componentWillUnmount</strong>: This method is called just before the component is removed from the DOM. It is typically used for cleaning up resources like timers, network requests, or subscriptions.
-            </li>
-          </ul>
+          <div>
+            <div>
+              componentDidMount: This method is called once the component has been rendered in the DOM. It is typically used for initiating network requests, subscriptions, or any other side effects.
+            </div>
+            <div>
+              componentDidUpdate: This method is called after the component has been updated. It is useful for responding to prop or state changes, such as making network requests based on the updated state.
+            </div>
+            <div>
+              componentWillUnmount: This method is called just before the component is removed from the DOM. It is typically used for cleaning up resources like timers, network requests, or subscriptions.
+            </div>
+          </div>
 
           <SyntaxHighlighter language="javascript" style={atomDark}>
             {`
@@ -86,9 +86,9 @@ render() {
 }
             `}
           </SyntaxHighlighter>
-        </li>
-        <li className="com-list-item">
-          <strong className="com-strong">Higher-Order Components (HOCs):</strong> These are functions that take a component and return a new component. HOCs are used for reusing component logic.
+        </div>
+        <div className="com-list-item">
+          Higher-Order Components (HOCs): These are functions that take a component and return a new component. HOCs are used for reusing component logic.
           <SyntaxHighlighter language="javascript" style={atomDark}>
 
             {`
@@ -116,9 +116,9 @@ export const HighOrderComponent = (HigherOrder) => {
 export const EnhancedOrder = HighOrderComponent(HigherOrder);
             `}
           </SyntaxHighlighter>
-        </li>
-        <li className="com-list-item">
-          <strong className="com-strong">Uncontrolled Components:</strong> These are components that maintain their own state and use refs to access the DOM.
+        </div>
+        <div className="com-list-item">
+          Uncontrolled Components: These are components that maintain their own state and use refs to access the DOM.
           <SyntaxHighlighter language="javascript" style={atomDark}>
 
             {`
@@ -143,8 +143,8 @@ return (
 export default UncontrolledComponent;
             `}
           </SyntaxHighlighter>
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <h2 className="com-subtitle">React Lifecycle Methods</h2>
       <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -202,54 +202,103 @@ Parent class ComponentDidMount
         JSX stands for JavaScript XML. It is a syntax extension for JavaScript, used with React to describe what the UI should look like. JSX may look like HTML, but it is transformed into JavaScript function calls by Babel.
       </p>
       <p className="com-text">
-        <strong>Importance of JSX:</strong>
-        <ul className="com-list">
-          <li className="com-list-item">
-            <strong className="faq-question">Declarative Syntax:</strong>
+        Importance of JSX:
+        <div className="com-list">
+          <div className="com-list-item">
+            Declarative Syntax:
             <p className="faq-answer">JSX provides a clear and expressive syntax for defining UI components, making the code more readable and maintainable.</p>
-          </li>
-          <li className="com-list-item">
-            <strong className="faq-question">Integration with JavaScript:</strong>
+          </div>
+          <div className="com-list-item">
+            Integration with JavaScript:
             <p className="faq-answer">Since JSX is a syntactic sugar for React.createElement, it integrates seamlessly with JavaScript, allowing you to embed JavaScript expressions within the markup.</p>
-          </li>
-          <li className="com-list-item">
-            <strong className="faq-question">Prevents Injection Attacks:</strong>
+          </div>
+          <div className="com-list-item">
+            Prevents Injection Attacks:
             <p className="faq-answer">JSX automatically escapes any values embedded in the markup, preventing cross-site scripting (XSS) attacks.</p>
-          </li>
-          <li className="com-list-item">
-            <strong className="faq-question">Tooling Support:</strong>
+          </div>
+          <div className="com-list-item">
+            Tooling Support:
             <p className="faq-answer">Tools like Babel can transform JSX into optimized JavaScript code, allowing you to use the latest features of JavaScript and React.</p>
-          </li>
-        </ul>
+          </div>
+        </div>
 
       </p>
-      <strong className="com-strong">Interview Questions</strong>
+      Interview Questions
       <ol className="com-list">
-        <li className='faq-item'><strong className="faq-question">What is JSX, and why is it used in React?</strong><br />
-          <p className="faq-answer">JSX stands for JavaScript XML. It is a syntax extension for JavaScript used in React to describe UI elements. JSX makes the code more readable and maintainable by providing a declarative syntax for defining UI components. It integrates seamlessly with JavaScript and prevents injection attacks by automatically escaping values embedded in the markup.</p>
-        </li>
-        <li className='faq-item'><strong className="faq-question">What is the difference between functional and class components?</strong><br />
-          <p className="faq-answer">Functional components are JavaScript functions that return JSX. They are simpler and don't have their own state or lifecycle methods. Class components are ES6 classes that extend <SyntaxHighlighter language="javascript" style={atomDark}>React.Component</SyntaxHighlighter>. They can manage their own state and have lifecycle methods.</p>
-        </li>
-        <li className='faq-item'><strong className="faq-question">How do you define a state in a functional component?</strong><br />
-          <p className="faq-answer"> You can define a state in a functional component using the <SyntaxHighlighter language="javascript" style={atomDark}>useState</SyntaxHighlighter> hook provided by React. For example, <SyntaxHighlighter language="javascript" style={atomDark}>const [count, setCount] = useState(0);</SyntaxHighlighter> initializes a state variable called <SyntaxHighlighter language="javascript" style={atomDark}>count</SyntaxHighlighter> with an initial value of <SyntaxHighlighter language="javascript" style={atomDark}>0</SyntaxHighlighter>, and <SyntaxHighlighter language="javascript" style={atomDark}>setCount</SyntaxHighlighter> is a function used to update the <SyntaxHighlighter language="javascript" style={atomDark}>count</SyntaxHighlighter> state.</p>
-        </li>
-        <li className='faq-item'><strong className="faq-question">Explain the <SyntaxHighlighter language="javascript" style={atomDark}>useState</SyntaxHighlighter> hook and its purpose.</strong><br />
-          <p className="faq-answer">The <SyntaxHighlighter language="javascript" style={atomDark}>useState</SyntaxHighlighter> hook is a built-in React hook that allows functional components to manage state. It takes an initial state value as an argument and returns an array containing the current state value and a function to update that state value. It enables functional components to have local state without using class components.</p>
-        </li>
-        <li className='faq-item'><strong className="faq-question">What are props in React, and how do you pass them to components?</strong><br />
-          <p className="faq-answer"> Props (short for properties) are a way to pass data from parent to child components in React. They are read-only and help make components reusable and customizable. Props are passed as attributes to components in JSX. For example, <SyntaxHighlighter language="javascript" style={atomDark}>{"<MyComponent name='John' />"}</SyntaxHighlighter> passes a prop called <SyntaxHighlighter language="javascript" style={atomDark}>name</SyntaxHighlighter> with the value <SyntaxHighlighter language="javascript" style={atomDark}>'John'</SyntaxHighlighter> to the <SyntaxHighlighter language="javascript" style={atomDark}>MyComponent</SyntaxHighlighter> component.</p>
-        </li>
-        <li className='faq-item'><strong className="faq-question">Can you explain the concept of lifting state up in React?</strong><br />
-          <p className="faq-answer"> Lifting state up is a pattern in React where you move the state from a child component to its parent component. This allows multiple child components to share the same state and synchronize their state with each other through their parent component. It helps maintain a single source of truth for the shared state.</p>
-        </li>
-        <li className='faq-item'><strong className="faq-question">What are the lifecycle methods of a class component?</strong><br />
-          <p className="faq-answer">Class components in React have several lifecycle methods, including <SyntaxHighlighter language="javascript" style={atomDark}>componentDidMount</SyntaxHighlighter>, <SyntaxHighlighter language="javascript" style={atomDark}>componentDidUpdate</SyntaxHighlighter>, and <SyntaxHighlighter language="javascript" style={atomDark}>componentWillUnmount</SyntaxHighlighter>. These methods allow you to perform actions at different stages of a component's lifecycle, such as initializing state, fetching data, and cleaning up resources.</p>
-        </li>
-        <li className='faq-item'><strong className="faq-question">How do you handle events in React?</strong><br />
-          <p className="faq-answer"> In React, you can handle events using JSX syntax similar to HTML. You pass a function as the event handler to the <SyntaxHighlighter language="javascript" style={atomDark}>onEvent</SyntaxHighlighter> attribute of the JSX element. For example, <SyntaxHighlighter language="javascript" style={atomDark}>{"<button onClick={handleClick}>Click me</button>"}</SyntaxHighlighter> attaches a <SyntaxHighlighter language="javascript" style={atomDark}>click</SyntaxHighlighter> event handler to the button element, calling the <SyntaxHighlighter language="javascript" style={atomDark}>handleClick</SyntaxHighlighter> function when clicked.</p> className="faq-answer"
-        </li>
+        <div className="faq-item">
+          <h6>What is JSX, and why is it used in React?</h6>
+          <p className="faq-answer">
+            JSX stands for JavaScript XML. It is a syntax extension for JavaScript used in React to describe UI elements.
+            JSX makes the code more readable and maintainable by providing a declarative syntax for defining UI components.
+            It integrates seamlessly with JavaScript and prevents injection attacks by automatically escaping values embedded in the markup.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h6>What is the difference between functional and class components?</h6>
+          <p className="faq-answer">
+            Functional components are JavaScript functions that return JSX. They are simpler and don't have their own state or lifecycle methods.
+            Class components are ES6 classes that extend React.Component. They can manage their own state and have lifecycle methods.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h6>How do you define a state in a functional component?</h6>
+          <p className="faq-answer">
+            You can define a state in a functional component using the useState hook provided by React.
+            For example, const [count, setCount] = useState(0) initializes a state variable called count with an initial value of 0,
+            and setCount is a function used to update the count state.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h6>Explain the useState hook and its purpose.</h6>
+          <p className="faq-answer">
+            The useState hook is a built-in React hook that allows functional components to manage state.
+            It takes an initial state value as an argument and returns an array containing the current state value and a function to update that state.
+            It enables functional components to have local state without using class components.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h6>What are props in React, and how do you pass them to components?</h6>
+          <p className="faq-answer">
+            Props (short for properties) are a way to pass data from parent to child components in React.
+            They are read-only and help make components reusable and customizable.
+            Props are passed as attributes to components in JSX. For example, &lt;MyComponent name='John' /&gt; passes a prop called name with the value 'John' to the MyComponent component.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h6>Can you explain the concept of lifting state up in React?</h6>
+          <p className="faq-answer">
+            Lifting state up is a pattern in React where you move the state from a child component to its parent component.
+            This allows multiple child components to share the same state and synchronize their state with each other through their parent component.
+            It helps maintain a single source of truth for the shared state.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h6>What are the lifecycle methods of a class component?</h6>
+          <p className="faq-answer">
+            Class components in React have several lifecycle methods, including componentDidMount, componentDidUpdate, and componentWillUnmount.
+            These methods allow you to perform actions at different stages of a component's lifecycle,
+            such as initializing state, fetching data, and cleaning up resources.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h6>How do you handle events in React?</h6>
+          <p className="faq-answer">
+            In React, you can handle events using JSX syntax similar to HTML.
+            You pass a function as the event handler to the onEvent attribute of the JSX element.
+            For example, &lt;button onClick={`handleClick`}&gt;Click me&lt;/button&gt; attaches a click event handler to the button,
+            calling the handleClick function when clicked.
+          </p>
+        </div>
       </ol>
+
+
     </div>
   );
 }

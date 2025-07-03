@@ -13,20 +13,20 @@ function JWTAuth() {
             <section className="jwt-section" id="introduction">
                 <h2 className="jwt-section-title">Introduction to JWT</h2>
                 <p className="jwt-section-content">
-                    <strong>JSON Web Token (JWT)</strong> is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object and are digitally signed using either a secret key (HMAC algorithm) or a public/private key pair (RSA or ECDSA).
+                    JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object and are digitally signed using either a secret key (HMAC algorithm) or a public/private key pair (RSA or ECDSA).
                 </p>
             </section>
 
             <section className="jwt-section" id="how-it-works">
                 <h2 className="jwt-section-title">How JWT Works</h2>
                 <p className="jwt-section-content">
-                    1. <strong>Token Sent:</strong> JWT is sent to the client (browser).<br />
-                    2. <strong>Server Verifies:</strong> Server checks credentials and creates a JWT.<br />
-                    3. <strong>Token Sent Again:</strong> JWT is sent to the client (browser).<br />
-                    4. <strong>Token Stored:</strong> Client stores the token (e.g., in localStorage or cookies).<br />
-                    5. <strong>Authenticated Requests:</strong> For future requests, client sends the token in the header.<br />
-                    6. <strong>Server Validates:</strong> Server checks the token to verify user identity.<br />
-                    7. <strong>Access Granted:</strong> If the token is valid, server allows access to protected resources.
+                    1. Token Sent: JWT is sent to the client (browser).<br />
+                    2. Server Verifies: Server checks credentials and creates a JWT.<br />
+                    3. Token Sent Again: JWT is sent to the client (browser).<br />
+                    4. Token Stored: Client stores the token (e.g., in localStorage or cookies).<br />
+                    5. Authenticated Requests: For future requests, client sends the token in the header.<br />
+                    6. Server Validates: Server checks the token to verify user identity.<br />
+                    7. Access Granted: If the token is valid, server allows access to protected resources.
                 </p>
 
             </section>
@@ -34,7 +34,7 @@ function JWTAuth() {
             <section className="jwt-section" id="components">
                 <h2 className="jwt-section-title">Components of JWT</h2>
                 <p className="jwt-section-content">
-                    A JWT consists of three parts separated by dots (<strong>.</strong>):
+                    A JWT consists of three parts separated by dots (.):
                 </p>
                 <div className="jwt-code-example">
                     <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -42,9 +42,9 @@ function JWTAuth() {
                     </SyntaxHighlighter>
                 </div>
                 <ul className="jwt-list">
-                    <li><strong>Header:</strong> Contains metadata about the token, such as the type of token and the algorithm used for signing.</li>
-                    <li><strong>Payload:</strong> Contains the claims, which are statements about an entity (typically the user) and additional data.</li>
-                    <li><strong>Signature:</strong> Ensures the token hasn't been altered. It's a combination of the encoded header, payload, and a secret key or private key.</li>
+                    <li>Header: Contains metadata about the token, such as the type of token and the algorithm used for signing.</li>
+                    <li>Payload: Contains the claims, which are statements about an entity (typically the user) and additional data.</li>
+                    <li>Signature: Ensures the token hasn't been altered. It's a combination of the encoded header, payload, and a secret key or private key.</li>
                 </ul>
                 <div className="jwt-code-example">
                     Example of a JWT structure:
@@ -64,7 +64,7 @@ SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c`}
                 <div className="jwt-subsection">
                     <p className="jwt-section-content">To generate and validate JWTs, the server-side code can use libraries such as <SyntaxHighlighter language="javascript" style={atomDark}>jsonwebtoken</SyntaxHighlighter> in Node.js.</p>
                     <div className="jwt-code-example">
-                        <strong>Login.controller.js</strong>
+                        Login.controller.js
                         <SyntaxHighlighter language="javascript" style={atomDark}>
                             {`const jwt = require('jsonwebtoken');
 
@@ -80,7 +80,7 @@ console.log(token);`}
 
                     </div>
                     <div className="jwt-code-example">
-                        <strong>.env</strong>
+                        .env
                         <SyntaxHighlighter language="javascript" style={atomDark}>
                             {`SECRET_KEY=guddubhaiyaa`}
                         </SyntaxHighlighter>
@@ -151,7 +151,7 @@ export default JWTAuth;`}
                 <div className="jwt-subsection">
                     <h3 className="jwt-section-title" align="center">Frontend Validation User in JWT Authetication</h3>
                     <p className="jwt-section-content">
-                        <strong>1. Obtain the JWT Token</strong> - When a user logs in, you typically make a request to your backend API, which returns a JWT token if the credentials are valid. Here’s an example using fetch:
+                        1. Obtain the JWT Token - When a user logs in, you typically make a request to your backend API, which returns a JWT token if the credentials are valid. Here’s an example using fetch:
                     </p>
                     <div className="jwt-code-example">
                         <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -177,7 +177,7 @@ async function login(username, password) {
                         </SyntaxHighlighter>
                     </div>
                     <p className="jwt-section-content">
-                        <strong>2. Decode and Validate the Token</strong> - You can use libraries like jsonwebtoken or jwt-decode to decode the token. You don't need to validate the token on the frontend (as it should be validated on the server), but you can check its expiration.
+                        2. Decode and Validate the Token - You can use libraries like jsonwebtoken or jwt-decode to decode the token. You don't need to validate the token on the frontend (as it should be validated on the server), but you can check its expiration.
                     </p>
                     <div className="jwt-code-example">
                         <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -205,7 +205,7 @@ if (userData) {
                         </SyntaxHighlighter>
                     </div>
                     <p className="jwt-section-content">
-                        <strong>3. Fetch User Profile Using User ID</strong> - Once you have the user ID from the decoded token, you can fetch the user profile from your backend:
+                        3. Fetch User Profile Using User ID - Once you have the user ID from the decoded token, you can fetch the user profile from your backend:
                     </p>
                     <div className="jwt-code-example">
                         <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -244,7 +244,7 @@ if (userData) {
             <section className="jwt-section" id="introduction">
                 <h2 className="jwt-section-title">Introduction to JWT</h2>
                 <p className="jwt-section-content">
-                    <strong>JSON Web Token (JWT)</strong> is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object and are digitally signed using either a secret key (HMAC algorithm) or a public/private key pair (RSA or ECDSA).
+                    JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object and are digitally signed using either a secret key (HMAC algorithm) or a public/private key pair (RSA or ECDSA).
                 </p>
             </section>
 
@@ -266,7 +266,7 @@ if (userData) {
             <section className="jwt-section" id="components">
                 <h2 className="jwt-section-title">Components of JWT</h2>
                 <p className="jwt-section-content">
-                    A JWT consists of three parts separated by dots (<strong>.</strong>):
+                    A JWT consists of three parts separated by dots (.):
                 </p>
                 <div className="jwt-code-example">
                     <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -275,13 +275,13 @@ if (userData) {
                         <h2>Minimum and Maximum expiresIn Values</h2>
 
                         <h3>Minimum:</h3>
-                        <p><strong>1s</strong> (1 second)</p>
+                        <p>1s (1 second)</p>
                         <SyntaxHighlighter language="javascript" style={atomDark}>
                             {`jwt.sign(payload, secretKey, {expiresIn: '1s' });`}
                         </SyntaxHighlighter>
 
                         <h3>Maximum (string format):</h3>
-                        <p><strong>365d</strong> (365 days, ~1 year)</p>
+                        <p>365d (365 days, ~1 year)</p>
                         <SyntaxHighlighter language="javascript" style={atomDark}>
                             {`jwt.sign(payload, secretKey, {expiresIn: '365d' });`}
                         </SyntaxHighlighter>
@@ -293,9 +293,9 @@ if (userData) {
                         </SyntaxHighlighter>
                 </div>
                 <ul className="jwt-list">
-                    <li><strong>Header:</strong> Contains metadata about the token, such as the type of token and the algorithm used for signing.</li>
-                    <li><strong>Payload:</strong> Contains the claims, which are statements about an entity (typically the user) and additional data.</li>
-                    <li><strong>Signature:</strong> Ensures the token hasn't been altered. It's a combination of the encoded header, payload, and a secret key or private key.</li>
+                    <li>Header: Contains metadata about the token, such as the type of token and the algorithm used for signing.</li>
+                    <li>Payload: Contains the claims, which are statements about an entity (typically the user) and additional data.</li>
+                    <li>Signature: Ensures the token hasn't been altered. It's a combination of the encoded header, payload, and a secret key or private key.</li>
                 </ul>
                 <div className="jwt-code-example">
                     Example of a JWT structure:
@@ -312,7 +312,7 @@ if (userData) {
             <section className="jwt-section" id="introduction">
                 <h2 className="jwt-section-title">Introduction to JWT</h2>
                 <p className="jwt-section-content">
-                    <strong>JSON Web Token (JWT)</strong> is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object and are digitally signed using either a secret key (HMAC algorithm) or a public/private key pair (RSA or ECDSA).
+                    JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object and are digitally signed using either a secret key (HMAC algorithm) or a public/private key pair (RSA or ECDSA).
                 </p>
             </section>
 
@@ -326,7 +326,7 @@ if (userData) {
             <section className="jwt-section" id="components">
                 <h2 className="jwt-section-title">Components of JWT</h2>
                 <p className="jwt-section-content">
-                    A JWT consists of three parts separated by dots (<strong>.</strong>):
+                    A JWT consists of three parts separated by dots (.):
                 </p>
                 <div className="jwt-code-example">
                     <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -334,9 +334,9 @@ if (userData) {
                     </SyntaxHighlighter>
                 </div>
                 <ul className="jwt-list">
-                    <li><strong>Header:</strong> Contains metadata about the token, such as the type of token and the algorithm used for signing.</li>
-                    <li><strong>Payload:</strong> Contains the claims, which are statements about an entity (typically the user) and additional data.</li>
-                    <li><strong>Signature:</strong> Ensures the token hasn't been altered. It's a combination of the encoded header, payload, and a secret key or private key.</li>
+                    <li>Header: Contains metadata about the token, such as the type of token and the algorithm used for signing.</li>
+                    <li>Payload: Contains the claims, which are statements about an entity (typically the user) and additional data.</li>
+                    <li>Signature: Ensures the token hasn't been altered. It's a combination of the encoded header, payload, and a secret key or private key.</li>
                 </ul>
                 <div className="jwt-code-example">
                     Example of a JWT structure:
@@ -396,9 +396,9 @@ if (userData) {
                     <p className="jwt-section-content">
                         JWTs are stateless, so you can’t just cancel them once they’re issued. However, there are a few ways to make them invalid before their expiration:
                         <ul>
-                            <li><strong>Token Blacklisting:</strong> Keep a list of tokens that are no longer valid and check this list with every request. This means storing data on the server and checking each time.</li>
-                            <li><strong>Token Versioning:</strong> Add a 'version' number in the token and keep track of the current version on the server. When something important happens (like a password change), update the version, and reject older tokens.</li>
-                            <li><strong>Secret Key Rotation:</strong> Change the secret key used to sign the tokens, which makes all previous tokens invalid. This requires careful planning for when to change keys.</li>
+                            <li>Token Blacklisting: Keep a list of tokens that are no longer valid and check this list with every request. This means storing data on the server and checking each time.</li>
+                            <li>Token Versioning: Add a 'version' number in the token and keep track of the current version on the server. When something important happens (like a password change), update the version, and reject older tokens.</li>
+                            <li>Secret Key Rotation: Change the secret key used to sign the tokens, which makes all previous tokens invalid. This requires careful planning for when to change keys.</li>
                         </ul>
                         Using these methods together can improve security, but they might also make things more complicated and slow down performance.
                     </p>
@@ -410,10 +410,10 @@ if (userData) {
                     <p className="jwt-section-content">
                         Storing JWT tokens securely is crucial to prevent them from being stolen by malicious actors. The best practices for storing tokens on the client-side include:
                         <ul>
-                            <li><strong>HttpOnly Cookies:</strong> Store the token in an HttpOnly cookie to prevent JavaScript from accessing it, reducing the risk of XSS attacks. Ensure the cookie is also marked as 'Secure' to enforce HTTPS usage.</li>
-                            <li><strong>Session Storage:</strong> Store tokens in session storage if HttpOnly cookies are not an option. This keeps the token in memory and clears it when the tab or browser is closed, reducing persistence.</li>
-                            <li><strong>Avoid Local Storage:</strong> While convenient, local storage is vulnerable to XSS attacks since JavaScript can access it. Use only if necessary and with additional precautions.</li>
-                            <li><strong>CSRF Tokens:</strong> If storing in cookies, use CSRF tokens to prevent CSRF attacks, adding an extra layer of security.</li>
+                            <li>HttpOnly Cookies: Store the token in an HttpOnly cookie to prevent JavaScript from accessing it, reducing the risk of XSS attacks. Ensure the cookie is also marked as 'Secure' to enforce HTTPS usage.</li>
+                            <li>Session Storage: Store tokens in session storage if HttpOnly cookies are not an option. This keeps the token in memory and clears it when the tab or browser is closed, reducing persistence.</li>
+                            <li>Avoid Local Storage: While convenient, local storage is vulnerable to XSS attacks since JavaScript can access it. Use only if necessary and with additional precautions.</li>
+                            <li>CSRF Tokens: If storing in cookies, use CSRF tokens to prevent CSRF attacks, adding an extra layer of security.</li>
                         </ul>
                         The chosen storage mechanism should balance security with usability based on the application's needs.
                     </p>
@@ -424,8 +424,8 @@ if (userData) {
                     <p className="jwt-section-content">
                         Access tokens and refresh tokens serve different purposes in the authentication process:
                         <ul>
-                            <li><strong>Access Tokens:</strong> These are short-lived tokens (usually valid for minutes to hours) used to access protected resources. They contain user information and permissions but have a short lifespan to limit their usability if compromised.</li>
-                            <li><strong>Refresh Tokens:</strong> These are long-lived tokens (often valid for weeks or months) that are used to obtain new access tokens when they expire. They are only sent to the server for token renewal and not for every API call, reducing exposure. Storing refresh tokens securely is crucial, as they grant access to issue new tokens.</li>
+                            <li>Access Tokens: These are short-lived tokens (usually valid for minutes to hours) used to access protected resources. They contain user information and permissions but have a short lifespan to limit their usability if compromised.</li>
+                            <li>Refresh Tokens: These are long-lived tokens (often valid for weeks or months) that are used to obtain new access tokens when they expire. They are only sent to the server for token renewal and not for every API call, reducing exposure. Storing refresh tokens securely is crucial, as they grant access to issue new tokens.</li>
                         </ul>
                         A secure system typically uses both tokens: short-lived access tokens for API access and long-lived refresh tokens to obtain new access tokens, minimizing the risk of long-term token exposure.
                     </p>

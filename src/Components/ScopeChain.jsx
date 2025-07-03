@@ -41,28 +41,28 @@ sum();`}
       <h2>Explanation:</h2>
       <ol>
         <li>
-          <strong>Variable Declaration and Initialization:</strong>
+          Variable Declaration and Initialization:
           <ul>
             <li>Variables 'a' and 'b' are declared using the 'var' keyword and initialized with values.</li>
             <li>'a' is assigned the value 10, and 'b' is assigned the value 20.</li>
           </ul>
         </li>
         <li>
-          <strong>Function Declaration:</strong>
+          Function Declaration:
           <ul>
             <li>The function 'sum' is declared using the function declaration syntax.</li>
             <li>Within the function body, the sum of variables 'a' and 'b' is logged to the console.</li>
           </ul>
         </li>
         <li>
-          <strong>Logging 'a':</strong>
+          Logging 'a':
           <ul>
             <li>Before the function 'sum' is called, the value of variable 'a' is logged to the console.</li>
             <li>At this point, 'a' has been declared but not yet initialized with a value, so it logs 'undefined'.</li>
           </ul>
         </li>
         <li>
-          <strong>Function Call:</strong>
+          Function Call:
           <ul>
             <li>The function 'sum' is called.</li>
             <li>Within the function, the sum of 'a' and 'b' is computed and logged to the console.</li>

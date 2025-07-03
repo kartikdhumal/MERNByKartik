@@ -51,11 +51,11 @@ var myCity = () => {
       <div className="method-section">
         <h3>Key Points about Hoisting</h3>
         <ul>
-          <li><strong>var:</strong> Hoisted and initialized with 'undefined'.</li>
-          <li><strong>let:</strong> Hoisted but not initialized, leading to a ReferenceError if accessed before declaration.</li>
-          <li><strong>const:</strong> Similar to 'let'; hoisted but not initialized, causing a ReferenceError.</li>
-          <li><strong>Function Declarations:</strong> Hoisted completely, allowing them to be called before their declaration.</li>
-          <li><strong>Function Expressions:</strong> Only the variable is hoisted, not the function, leading to 'undefined' until the assignment.</li>
+          <li>var: Hoisted and initialized with 'undefined'.</li>
+          <li>let: Hoisted but not initialized, leading to a ReferenceError if accessed before declaration.</li>
+          <li>const: Similar to 'let'; hoisted but not initialized, causing a ReferenceError.</li>
+          <li>Function Declarations: Hoisted completely, allowing them to be called before their declaration.</li>
+          <li>Function Expressions: Only the variable is hoisted, not the function, leading to 'undefined' until the assignment.</li>
         </ul>
       </div>
     </div>

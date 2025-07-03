@@ -88,29 +88,29 @@ function Testing() {
                 <h1>Screen Functions</h1>
 
                 <div>
-                    <p><strong>getByAltText</strong> - Retrieves an element from the document by its <code>alt</code> attribute text. Returns the first matching element.</p>
+                    <p>getByAltText - Retrieves an element from the document by its <code>alt</code> attribute text. Returns the first matching element.</p>
 
-                    <p><strong>getAllByAltText</strong> - Retrieves all elements from the document with the specified <code>alt</code> text. Returns an array.</p>
+                    <p>getAllByAltText - Retrieves all elements from the document with the specified <code>alt</code> text. Returns an array.</p>
 
-                    <p><strong>queryByAltText</strong> - Same as <code>getByAltText</code>, but returns <code>null</code> if no match is found.</p>
+                    <p>queryByAltText - Same as <code>getByAltText</code>, but returns <code>null</code> if no match is found.</p>
 
-                    <p><strong>queryAllByAltText</strong> - Same as <code>getAllByAltText</code>, but returns an empty array if no matches found.</p>
+                    <p>queryAllByAltText - Same as <code>getAllByAltText</code>, but returns an empty array if no matches found.</p>
 
-                    <p><strong>getByTestId</strong> - Finds an element using the <code>data-testid</code> attribute. Returns the first match.</p>
+                    <p>getByTestId - Finds an element using the <code>data-testid</code> attribute. Returns the first match.</p>
 
-                    <p><strong>getAllByTestId</strong> - Gets all elements with the given <code>data-testid</code>. Returns an array.</p>
+                    <p>getAllByTestId - Gets all elements with the given <code>data-testid</code>. Returns an array.</p>
 
-                    <p><strong>queryByTestId</strong> - Like <code>getByTestId</code>, but returns <code>null</code> if not found.</p>
+                    <p>queryByTestId - Like <code>getByTestId</code>, but returns <code>null</code> if not found.</p>
 
-                    <p><strong>queryAllByTestId</strong> - Like <code>getAllByTestId</code>, but returns an empty array if no elements found.</p>
+                    <p>queryAllByTestId - Like <code>getAllByTestId</code>, but returns an empty array if no elements found.</p>
 
-                    <p><strong>getByText</strong> - Finds an element by visible text. Returns the first match.</p>
+                    <p>getByText - Finds an element by visible text. Returns the first match.</p>
 
-                    <p><strong>getAllByText</strong> - Finds all elements by visible text. Returns an array.</p>
+                    <p>getAllByText - Finds all elements by visible text. Returns an array.</p>
 
-                    <p><strong>queryByText</strong> - Like <code>getByText</code>, but returns <code>null</code> if nothing matches.</p>
+                    <p>queryByText - Like <code>getByText</code>, but returns <code>null</code> if nothing matches.</p>
 
-                    <p><strong>queryAllByText</strong> - Like <code>getAllByText</code>, but returns empty array if no matches found.</p>
+                    <p>queryAllByText - Like <code>getAllByText</code>, but returns empty array if no matches found.</p>
                 </div>
             </div>
 

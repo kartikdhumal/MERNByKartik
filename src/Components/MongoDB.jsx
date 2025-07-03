@@ -37,16 +37,16 @@ It stores data in BSON format (Binary JSON), which is a binary representation of
         <h2>Difference Between MongoDB and MySQL</h2>
 
         <h3>When to Use MongoDB:</h3>
-        <p><strong>✔ Unstructured or semi-structured data:</strong> Ideal for handling flexible or changing data formats.</p>
-        <p><strong>✔ Dynamic schema:</strong> Useful when your data structure may evolve frequently.</p>
-        <p><strong>✔ High scalability:</strong> Best for real-time analytics, social platforms, IoT apps, and content-heavy apps.</p>
-        <p><strong>✔ Fast development:</strong> Perfect for agile workflows where rapid iteration is needed.</p>
+        <p>✔ Unstructured or semi-structured data: Ideal for handling flexible or changing data formats.</p>
+        <p>✔ Dynamic schema: Useful when your data structure may evolve frequently.</p>
+        <p>✔ High scalability: Best for real-time analytics, social platforms, IoT apps, and content-heavy apps.</p>
+        <p>✔ Fast development: Perfect for agile workflows where rapid iteration is needed.</p>
 
         <h3>When to Use MySQL:</h3>
-        <p><strong>✔ Structured data:</strong> Best suited when relationships and data types are clearly defined.</p>
-        <p><strong>✔ Data integrity:</strong> Strong in scenarios requiring strict schemas and ACID compliance.</p>
-        <p><strong>✔ Complex queries:</strong> Ideal when using joins, aggregations, and reporting logic.</p>
-        <p><strong>✔ Traditional systems:</strong> A proven choice for ERP, CRM, banking, and finance apps.</p>
+        <p>✔ Structured data: Best suited when relationships and data types are clearly defined.</p>
+        <p>✔ Data integrity: Strong in scenarios requiring strict schemas and ACID compliance.</p>
+        <p>✔ Complex queries: Ideal when using joins, aggregations, and reporting logic.</p>
+        <p>✔ Traditional systems: A proven choice for ERP, CRM, banking, and finance apps.</p>
 
         <h3>Terminology Comparison: MySQL vs MongoDB</h3>
         <table className="comparison-table">
@@ -374,7 +374,7 @@ run().catch(console.error);`}</SyntaxHighlighter>
       <section id="mongoose">
         <h2>Difference Between MongoDB and Mongoose</h2>
         <ul>
-          <li><strong>MongoDB:</strong>
+          <li>MongoDB:
             <ul>
               <li>MongoDB is a NoSQL database that stores data in JSON-like documents.</li>
               <li>It provides a rich query language and allows for flexible schema design.</li>
@@ -383,7 +383,7 @@ run().catch(console.error);`}</SyntaxHighlighter>
               <li>Schema-less, allowing for dynamic data models.</li>
             </ul>
           </li>
-          <li><strong>Mongoose:</strong>
+          <li>Mongoose:
             <ul>
               <li>Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js.</li>
               <li>It provides a schema-based solution to model application data.</li>

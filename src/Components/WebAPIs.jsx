@@ -93,17 +93,17 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT";`}
 
       <h2>🔍 Difference Between Web APIs</h2>
       <p className="doc-description">
-        <strong>sessionStorage vs localStorage:</strong> <br />
+        sessionStorage vs localStorage: <br />
         sessionStorage stores data only for the duration of the page session — once you close the tab, it’s gone. On the other hand, localStorage keeps the data even after closing the browser, unless it’s manually cleared. Both only store strings and are limited to the same origin.
       </p>
 
       <p className="doc-description">
-        <strong>localStorage vs Cookies:</strong> <br />
+        localStorage vs Cookies: <br />
         localStorage stores data on the client side and does not get sent to the server with every request. It can store more data (usually ~5MB), and is ideal for saving user preferences. Cookies, however, are smaller in size (~4KB) and are automatically sent with every HTTP request, making them useful for authentication and tracking — but they can slow down requests if misused.
       </p>
 
       <p className="doc-description">
-        <strong>sessionStorage vs Cookies:</strong> <br />
+        sessionStorage vs Cookies: <br />
         While both are short-term storage mechanisms, sessionStorage is completely client-side and disappears when the tab is closed. Cookies can have an expiration time or persist until manually deleted, and they travel with every HTTP request, making them more suitable for server-side processes like login sessions.
       </p>
 

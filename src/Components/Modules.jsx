@@ -25,11 +25,11 @@ function Modules() {
       <div className="method-section">
         <h3>3. Default vs Named Exports</h3>
         <p>
-          There are two types of exports in JavaScript modules: <strong>default exports</strong> and <strong>named exports</strong>.
+          There are two types of exports in JavaScript modules: default exports and named exports.
         </p>
         <ul>
           <li>
-            <strong>Default Export:</strong>
+            Default Export:
             <p> A module can have one default export, which can be imported without curly braces. </p>
             
               <SyntaxHighlighter language="javascript" style={atomDark}>{`// file: greet.js
@@ -42,7 +42,7 @@ export default function greet(name) {
             
           </li>
           <li>
-            <strong>Named Export:</strong> A module can have multiple named exports. These must be imported with curly braces.
+            Named Export: A module can have multiple named exports. These must be imported with curly braces.
             
               <SyntaxHighlighter language="javascript" style={atomDark}>{`//
 export const pi = 3.14159;

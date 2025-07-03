@@ -14,12 +14,12 @@ function ReactRedux() {
 
                 <h2>Concepts in Redux:</h2>
                 <ul>
-                    <li><strong>Action:</strong> Plain JavaScript objects that represent what happened. They are dispatched to the store.</li>
-                    <li><strong>Reducer:</strong> Functions that specify how the application's state changes in response to actions. They calculate the new state based on the previous state and the action dispatched.</li>
-                    <li><strong>Dispatch:</strong> A function used to send actions to the Redux store.</li>
-                    <li><strong>Payload:</strong> The data associated with an action. It is a property of the action object.</li>
-                    <li><strong>Provider:</strong> A React component that provides the Redux store to its child components.</li>
-                    <li><strong>Initial State:</strong> The initial state of the Redux store when the application starts.</li>
+                    <li>Action: Plain JavaScript objects that represent what happened. They are dispatched to the store.</li>
+                    <li>Reducer: Functions that specify how the application's state changes in response to actions. They calculate the new state based on the previous state and the action dispatched.</li>
+                    <li>Dispatch: A function used to send actions to the Redux store.</li>
+                    <li>Payload: The data associated with an action. It is a property of the action object.</li>
+                    <li>Provider: A React component that provides the Redux store to its child components.</li>
+                    <li>Initial State: The initial state of the Redux store when the application starts.</li>
                 </ul>
 
                 <h2>How Redux Works:</h2>

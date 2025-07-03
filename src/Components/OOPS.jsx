@@ -19,7 +19,7 @@ function OOPS() {
       <div className="method-section">
         <h3>Introduction to OOP</h3>
         <p>
-          <strong>Object-Oriented Programming (OOP)</strong> is a programming paradigm centered around the concept of "objects". 
+          Object-Oriented Programming (OOP) is a programming paradigm centered around the concept of "objects". 
           These objects can contain data in the form of fields (often referred to as properties or attributes) and code in the form of procedures 
           (often referred to as methods). OOP aims to implement real-world entities like inheritance, hiding, polymorphism, etc., in programming.
         </p>
@@ -28,17 +28,17 @@ function OOPS() {
           more effectively. The four fundamental pillars of OOP are:
         </p>
         <ul>
-          <li><strong>Encapsulation:</strong> Bundling data with methods that operate on that data.</li>
-          <li><strong>Abstraction:</strong> Hiding complex implementation details and showing only the essential features.</li>
-          <li><strong>Inheritance:</strong> Mechanism where one class inherits properties and methods from another class.</li>
-          <li><strong>Polymorphism:</strong> Ability to present the same interface for different underlying data types.</li>
+          <li>Encapsulation: Bundling data with methods that operate on that data.</li>
+          <li>Abstraction: Hiding complex implementation details and showing only the essential features.</li>
+          <li>Inheritance: Mechanism where one class inherits properties and methods from another class.</li>
+          <li>Polymorphism: Ability to present the same interface for different underlying data types.</li>
         </ul>
       </div>
 
       <div className="method-section">
         <h3>1. Classes and Objects</h3>
         <p>
-          <strong>Definition:</strong> Classes are blueprints for creating objects. Objects are instances of classes.
+          Definition: Classes are blueprints for creating objects. Objects are instances of classes.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -69,7 +69,7 @@ function OOPS() {
       <div className="method-section">
         <h3>2. Encapsulation</h3>
         <p>
-          <strong>Definition:</strong> Encapsulation is the bundling of data with the methods that operate on that data. It restricts direct access to some of the object's components.
+          Definition: Encapsulation is the bundling of data with the methods that operate on that data. It restricts direct access to some of the object's components.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -122,7 +122,7 @@ function OOPS() {
       <div className="method-section">
         <h3>3. Inheritance</h3>
         <p>
-          <strong>Definition:</strong> Inheritance is a mechanism where one class inherits the properties and methods of another class.
+          Definition: Inheritance is a mechanism where one class inherits the properties and methods of another class.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -151,7 +151,7 @@ function OOPS() {
       <div className="method-section">
         <h3>4. Polymorphism</h3>
         <p>
-          <strong>Definition:</strong> Polymorphism is the ability to present the same interface for differing underlying data types.
+          Definition: Polymorphism is the ability to present the same interface for differing underlying data types.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -190,7 +190,7 @@ function OOPS() {
       <div className="method-section">
         <h3>5. Abstraction</h3>
         <p>
-          <strong>Definition:</strong> Abstraction means hiding the complex implementation details and showing only the essential features of the object.
+          Definition: Abstraction means hiding the complex implementation details and showing only the essential features of the object.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -229,7 +229,7 @@ function OOPS() {
       <div className="method-section">
         <h3>6. Composition</h3>
         <p>
-          <strong>Definition:</strong> Composition is a design principle where a class is composed of one or more objects from other classes to achieve complex functionality.
+          Definition: Composition is a design principle where a class is composed of one or more objects from other classes to achieve complex functionality.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -267,7 +267,7 @@ function OOPS() {
       <div className="method-section">
         <h3>7. Aggregation</h3>
         <p>
-          <strong>Definition:</strong> Aggregation is a special form of association where the child can exist independently of the parent.
+          Definition: Aggregation is a special form of association where the child can exist independently of the parent.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -309,7 +309,7 @@ function OOPS() {
       <div className="method-section">
         <h3>8. Association</h3>
         <p>
-          <strong>Definition:</strong> Association represents the relationship between two separate classes that establish through their objects.
+          Definition: Association represents the relationship between two separate classes that establish through their objects.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -350,7 +350,7 @@ function OOPS() {
       <div className="method-section">
         <h3>9. Method Overriding</h3>
         <p>
-          <strong>Definition:</strong> Method overriding is a feature that allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
+          Definition: Method overriding is a feature that allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -382,7 +382,7 @@ function OOPS() {
       <div className="method-section">
         <h3>10. Method Overloading</h3>
         <p>
-          <strong>Definition:</strong> JavaScript does not support method overloading in the traditional sense (multiple methods with the same name but different parameters). However, we can simulate it using default parameters or the arguments object.
+          Definition: JavaScript does not support method overloading in the traditional sense (multiple methods with the same name but different parameters). However, we can simulate it using default parameters or the arguments object.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -409,7 +409,7 @@ function OOPS() {
       <div className="method-section">
         <h3>11. Static Methods and Properties</h3>
         <p>
-          <strong>Definition:</strong> Static methods and properties are called on the class itself, not on instances of the class.
+          Definition: Static methods and properties are called on the class itself, not on instances of the class.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -435,7 +435,7 @@ function OOPS() {
       <div className="method-section">
         <h3>12. Getters and Setters</h3>
         <p>
-          <strong>Definition:</strong> Getters and setters allow you to define methods that are executed when a property is accessed or modified.
+          Definition: Getters and setters allow you to define methods that are executed when a property is accessed or modified.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -469,7 +469,7 @@ function OOPS() {
       <div className="method-section">
         <h3>13. Operator Overloading</h3>
         <p>
-          <strong>Definition:</strong> JavaScript does not support operator overloading. Operator overloading allows operators to have user-defined meanings on user-defined types. However, we can achieve similar functionality using methods.
+          Definition: JavaScript does not support operator overloading. Operator overloading allows operators to have user-defined meanings on user-defined types. However, we can achieve similar functionality using methods.
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`

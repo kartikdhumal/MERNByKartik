@@ -36,16 +36,16 @@ function Promises() {
 
       <h2>Promise States</h2>
       <ul>
-        <li><strong>Fulfilled:</strong> Action related to the promise succeeded</li>
-        <li><strong>Rejected:</strong> Action related to the promise failed</li>
-        <li><strong>Pending:</strong> Promise is still pending (not fulfilled or rejected)</li>
+        <li>Fulfilled: Action related to the promise succeeded</li>
+        <li>Rejected: Action related to the promise failed</li>
+        <li>Pending: Promise is still pending (not fulfilled or rejected)</li>
       </ul>
 
       <h2>Promise Methods</h2>
 
       <h3>1. Promise.all()</h3>
       <p>
-        <strong>Definition:</strong> Promise.all() takes an iterable of promises and returns a single promise that resolves when all of the promises in the iterable have resolved, or rejects if any of the promises reject.
+        Definition: Promise.all() takes an iterable of promises and returns a single promise that resolves when all of the promises in the iterable have resolved, or rejects if any of the promises reject.
       </p>
       <h2>
         If all true then resolves with an array of resolved values else will return first rejected promise
@@ -64,7 +64,7 @@ function Promises() {
 
       <h3>2. Promise.race()</h3>
       <p>
-        <strong>Definition:</strong> Promise.race() returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects, with the value or reason from that promise.
+        Definition: Promise.race() returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects, with the value or reason from that promise.
       </p>
       <h2>
         It always resolves with an array of objects that each describe the outcome of each promise.
@@ -83,7 +83,7 @@ function Promises() {
 
       <h3>3. Promise.allSettled()</h3>
       <p>
-        <strong>Definition:</strong> Promise.allSettled() returns a promise that resolves after all of the given promises have either resolved or rejected. It provides an array of objects describing the outcome of each promise.
+        Definition: Promise.allSettled() returns a promise that resolves after all of the given promises have either resolved or rejected. It provides an array of objects describing the outcome of each promise.
       </p>
       <h2>
         It will return the first promise no matter it is resolved or rejected
@@ -99,7 +99,7 @@ function Promises() {
 
       <h3>4. Promise.any()</h3>
       <p>
-        <strong>Definition:</strong> Promise.any() returns a promise that resolves as soon as any of the given promises fulfill. If no promises fulfill, it rejects with an AggregateError, grouping all rejection reasons.
+        Definition: Promise.any() returns a promise that resolves as soon as any of the given promises fulfill. If no promises fulfill, it rejects with an AggregateError, grouping all rejection reasons.
       </p>
       <h2>
         with the value from that promise. If none of the promises resolve, it rejects with an AggregateError containing all the rejection reasons.

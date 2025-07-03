@@ -258,10 +258,10 @@ window.scrollTo(0, 500); // Scrolls to 500px down the page`}
         {/* Mouse Events */}
         <h3 className="sub-section-title">Mouse Events:</h3>
         <ul className="event-list">
-          <li><strong>click:</strong> Fired when a pointing device button (usually a mouse's primary button) is pressed and released on a single element.</li>
-          <li><strong>dblclick:</strong> Fired when a pointing device button is clicked twice on a single element.</li>
-          <li><strong>mouseenter:</strong> Fired when a pointing device is moved onto the element that has the listener attached.</li>
-          <li><strong>mouseleave:</strong> Fired when a pointing device is moved off the element that has the listener attached.</li>
+          <li>click: Fired when a pointing device button (usually a mouse's primary button) is pressed and released on a single element.</li>
+          <li>dblclick: Fired when a pointing device button is clicked twice on a single element.</li>
+          <li>mouseenter: Fired when a pointing device is moved onto the element that has the listener attached.</li>
+          <li>mouseleave: Fired when a pointing device is moved off the element that has the listener attached.</li>
         </ul>
 
         
@@ -289,8 +289,8 @@ button.addEventListener('mouseleave', function () {
         {/* Keyboard Events */}
         <h3 className="sub-section-title">Keyboard Events:</h3>
         <ul className="event-list">
-          <li><strong>keydown:</strong> Fired when a key is pressed down.</li>
-          <li><strong>keyup:</strong> Fired when a key is released.</li>
+          <li>keydown: Fired when a key is pressed down.</li>
+          <li>keyup: Fired when a key is released.</li>
         </ul>
 
         
@@ -309,9 +309,9 @@ document.addEventListener('keyup', function (event) {
         {/* Form Events */}
         <h3 className="sub-section-title">Form Events:</h3>
         <ul className="event-list">
-          <li><strong>submit:</strong> Fired when a form is submitted.</li>
-          <li><strong>change:</strong> Fired when the value of an element has been changed.</li>
-          <li><strong>input:</strong> Fired when the value of an <SyntaxHighlighter language="javascript" style={atomDark}>&lt;input&gt;</SyntaxHighlighter>, <SyntaxHighlighter language="javascript" style={atomDark}>&lt;textarea&gt;</SyntaxHighlighter>, or <SyntaxHighlighter language="javascript" style={atomDark}>&lt;select&gt;</SyntaxHighlighter> element has been changed.</li>
+          <li>submit: Fired when a form is submitted.</li>
+          <li>change: Fired when the value of an element has been changed.</li>
+          <li>input: Fired when the value of an <SyntaxHighlighter language="javascript" style={atomDark}>&lt;input&gt;</SyntaxHighlighter>, <SyntaxHighlighter language="javascript" style={atomDark}>&lt;textarea&gt;</SyntaxHighlighter>, or <SyntaxHighlighter language="javascript" style={atomDark}>&lt;select&gt;</SyntaxHighlighter> element has been changed.</li>
         </ul>
 
         
@@ -337,8 +337,8 @@ inputField.addEventListener('input', function () {
         {/* Window Events */}
         <h3 className="sub-section-title">Window Events:</h3>
         <ul className="event-list">
-          <li><strong>resize:</strong> Fired when the document view (window) has been resized.</li>
-          <li><strong>scroll:</strong> Fired when the document view or an element has been scrolled.</li>
+          <li>resize: Fired when the document view (window) has been resized.</li>
+          <li>scroll: Fired when the document view or an element has been scrolled.</li>
         </ul>
 
         
@@ -357,8 +357,8 @@ window.addEventListener('scroll', function () {
         {/* Clipboard Events */}
         <h3 className="sub-section-title">Clipboard Events:</h3>
         <ul className="event-list">
-          <li><strong>copy:</strong> Fired when the user initiates a copy action through the browser's UI.</li>
-          <li><strong>paste:</strong> Fired when the user initiates a paste action through the browser's UI.</li>
+          <li>copy: Fired when the user initiates a copy action through the browser's UI.</li>
+          <li>paste: Fired when the user initiates a paste action through the browser's UI.</li>
         </ul>
 
         

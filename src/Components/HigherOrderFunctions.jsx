@@ -17,7 +17,7 @@ function HigherOrderFunctions() {
       <div className="method-section">
         <h3>What is a Higher-Order Function?</h3>
         <p>
-          A higher-order function is a function that takes one or more functions as arguments or returns a function as its result. Common higher-order functions include <SyntaxHighlighter language="javascript" style={atomDark}>map</SyntaxHighlighter>, <SyntaxHighlighter language="javascript" style={atomDark}>filter</SyntaxHighlighter>, and <SyntaxHighlighter language="javascript" style={atomDark}>reduce</SyntaxHighlighter>.
+          A higher-order function is a function that takes one or more functions as arguments or returns a function as its result. Common higher-order functions include map , filter , and reduce.
         </p>
       </div>
 
@@ -37,7 +37,7 @@ myName(title); // Output: ---- My Name ----
                   //          Kartik Dhumal`}</SyntaxHighlighter>
         
         <p>
-          In this example, <SyntaxHighlighter language="javascript" style={atomDark}>myName</SyntaxHighlighter> is a higher-order function because it takes another function <SyntaxHighlighter language="javascript" style={atomDark}>title</SyntaxHighlighter> as its argument.
+          In this example, myName is a higher-order function because it takes another function title as its argument.
         </p>
       </div>
 
@@ -85,7 +85,7 @@ const squares = arr.map((x) => square(x));
 console.log(squares); // Output: [144, 441, 2916, 4096]`}</SyntaxHighlighter>
         
         <p>
-          The <SyntaxHighlighter language="javascript" style={atomDark}>map</SyntaxHighlighter> function creates a new array populated with the results of calling a provided function on every element in the calling array.
+          The map function creates a new array populated with the results of calling a provided function on every element in the calling array.
         </p>
 
         <h4>2. forEach</h4>
@@ -95,7 +95,7 @@ console.log(squares); // Output: [144, 441, 2916, 4096]`}</SyntaxHighlighter>
 }); // Output: 12 21 54 64`}</SyntaxHighlighter>
         
         <p>
-          The <SyntaxHighlighter language="javascript" style={atomDark}>forEach</SyntaxHighlighter> method executes a provided function once for each array element. Unlike <SyntaxHighlighter language="javascript" style={atomDark}>map</SyntaxHighlighter>, it does not return a new array.
+          The forEach method executes a provided function once for each array element. Unlike map, it does not return a new array.
         </p>
 
         <h4>3. Filter</h4>
@@ -104,7 +104,7 @@ console.log(squares); // Output: [144, 441, 2916, 4096]`}</SyntaxHighlighter>
 console.log(evens); // Output: [12, 54, 64]`}</SyntaxHighlighter>
         
         <p>
-          The <SyntaxHighlighter language="javascript" style={atomDark}>filter</SyntaxHighlighter> method creates a new array with all elements that pass the test implemented by the provided function.
+          The filter method creates a new array with all elements that pass the test implemented by the provided function.
         </p>
 
         <h4>4. Reduce</h4>
@@ -115,24 +115,22 @@ console.log(evens); // Output: [12, 54, 64]`}</SyntaxHighlighter>
 console.log(sum); // Output: 151`}</SyntaxHighlighter>
         
         <p>
-          The <SyntaxHighlighter language="javascript" style={atomDark}>reduce</SyntaxHighlighter> method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+          The reduce method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
           It takes two parameters:
-          <ul>
-            <li><strong>Reducer Function:</strong> This function takes two arguments, the accumulator and the current value. The accumulator accumulates the callback's return values. It is the accumulated value previously returned in the last invocation of the callback, or <SyntaxHighlighter language="javascript" style={atomDark}>initialValue</SyntaxHighlighter>, if supplied.</li>
-            <li><strong>Initial Value (optional):</strong> A value to use as the first argument to the first call of the callback. If no initial value is supplied, the first element in the array will be used as the initial accumulator value, and the callback will start executing at the second element.</li>
-          </ul>
+          <div>
+            <p>Reducer Function: This function takes two arguments, the accumulator and the current value. The accumulator accumulates the callback's return values. It is the accumulated value previously returned in the last invocation of the callback, or initialValue, if supplied.</p>
+            <p>Initial Value (optional): A value to use as the first argument to the first call of the callback. If no initial value is supplied, the first element in the array will be used as the initial accumulator value, and the callback will start executing at the second element.</p>
+          </div>
         </p>
       </div>
 
       <div className="method-section">
         <h3>Summary</h3>
-        <ul>
-          <li><strong>Higher-Order Functions:</strong> Functions that take other functions as arguments or return functions as results.</li>
-          <li><strong>Map:</strong> Transforms each element in an array by applying a function and returns a new array.</li>
-          <li><strong>forEach:</strong> Executes a provided function once for each array element; does not return a new array.</li>
-          <li><strong>Filter:</strong> Filters elements in an array based on a condition and returns a new array of elements that meet the condition.</li>
-          <li><strong>Reduce:</strong> Reduces an array to a single value by applying a reducer function to each element. It takes a reducer function and an optional initial value as parameters.</li>
-        </ul>
+          <p>Higher-Order Functions: Functions that take other functions as arguments or return functions as results.</p>
+          <p>Map: Transforms each element in an array by applying a function and returns a new array.</p>
+          <p>forEach: Executes a provided function once for each array element; does not return a new array.</p>
+          <p>Filter: Filters elements in an array based on a condition and returns a new array of elements that meet the condition.</p>
+          <p>Reduce: Reduces an array to a single value by applying a reducer function to each element. It takes a reducer function and an optional initial value as parameters.</p>
       </div>
     </div>
   );

@@ -22,40 +22,40 @@ function DSA() {
             <h2>Key Definitions</h2>
             <ul>
                 <li>
-                    <strong>Data Structure:</strong> A way of organizing and storing data so that it can be accessed and modified efficiently. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.
+                    Data Structure: A way of organizing and storing data so that it can be accessed and modified efficiently. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.
                 </li>
                 <li>
-                    <strong>Algorithm:</strong> A step-by-step procedure or formula for solving a problem. Algorithms can be expressed in natural language, pseudocode, or programming languages.
+                    Algorithm: A step-by-step procedure or formula for solving a problem. Algorithms can be expressed in natural language, pseudocode, or programming languages.
                 </li>
                 <li>
-                    <strong>Time Complexity:</strong> A computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input. It's often expressed using Big O notation (e.g., O(n), O(log n)).
+                    Time Complexity: A computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input. It's often expressed using Big O notation (e.g., O(n), O(log n)).
                 </li>
                 <li>
-                    <strong>Space Complexity:</strong> A computational complexity that describes the amount of memory space an algorithm uses in relation to the input size. Like time complexity, it's expressed using Big O notation.
+                    Space Complexity: A computational complexity that describes the amount of memory space an algorithm uses in relation to the input size. Like time complexity, it's expressed using Big O notation.
                 </li>
                 <li>
-                    <strong>Array:</strong> A collection of items stored at contiguous memory locations. It allows for easy access to elements via indices.
+                    Array: A collection of items stored at contiguous memory locations. It allows for easy access to elements via indices.
                 </li>
                 <li>
-                    <strong>Linked List:</strong> A linear data structure where each element (node) points to the next one, allowing for dynamic memory allocation and efficient insertions/deletions.
+                    Linked List: A linear data structure where each element (node) points to the next one, allowing for dynamic memory allocation and efficient insertions/deletions.
                 </li>
                 <li>
-                    <strong>Stack:</strong> A collection of elements that follows the Last In, First Out (LIFO) principle, where the last element added is the first to be removed. It supports operations like push (add) and pop (remove).
+                    Stack: A collection of elements that follows the Last In, First Out (LIFO) principle, where the last element added is the first to be removed. It supports operations like push (add) and pop (remove).
                 </li>
                 <li>
-                    <strong>Queue:</strong> A collection of elements that follows the First In, First Out (FIFO) principle, where the first element added is the first to be removed. It supports operations like enqueue (add) and dequeue (remove).
+                    Queue: A collection of elements that follows the First In, First Out (FIFO) principle, where the first element added is the first to be removed. It supports operations like enqueue (add) and dequeue (remove).
                 </li>
                 <li>
-                    <strong>Tree:</strong> A hierarchical data structure with nodes connected by edges. Each tree has a root node, and nodes can have children, forming a parent-child relationship. Common types include binary trees, binary search trees, and balanced trees.
+                    Tree: A hierarchical data structure with nodes connected by edges. Each tree has a root node, and nodes can have children, forming a parent-child relationship. Common types include binary trees, binary search trees, and balanced trees.
                 </li>
                 <li>
-                    <strong>Graph:</strong> A collection of nodes (vertices) connected by edges. Graphs can be directed or undirected and are used to represent relationships in networks, such as social media connections or transportation systems.
+                    Graph: A collection of nodes (vertices) connected by edges. Graphs can be directed or undirected and are used to represent relationships in networks, such as social media connections or transportation systems.
                 </li>
                 <li>
-                    <strong>Sorting Algorithms:</strong> Algorithms used to arrange elements in a specific order (ascending or descending). Common sorting algorithms include Bubble Sort, Merge Sort, Quick Sort, and Insertion Sort.
+                    Sorting Algorithms: Algorithms used to arrange elements in a specific order (ascending or descending). Common sorting algorithms include Bubble Sort, Merge Sort, Quick Sort, and Insertion Sort.
                 </li>
                 <li>
-                    <strong>Searching Algorithms:</strong> Algorithms used to find a specific element in a data structure. Common searching algorithms include Linear Search and Binary Search.
+                    Searching Algorithms: Algorithms used to find a specific element in a data structure. Common searching algorithms include Linear Search and Binary Search.
                 </li>
             </ul>
 
@@ -78,10 +78,10 @@ function DSA() {
                 </ul>
 
                 <h3>Time Complexity</h3>
-                <p>The time complexity of Bubble Sort in the worst and average case is <strong>O(n²)</strong>, where <strong>n</strong> is the number of elements in the array. In the best case, when the array is already sorted, the time complexity is <strong>O(n)</strong>.</p>
+                <p>The time complexity of Bubble Sort in the worst and average case is O(n²), where n is the number of elements in the array. In the best case, when the array is already sorted, the time complexity is O(n).</p>
 
                 <h3>Space Complexity</h3>
-                <p>The space complexity of Bubble Sort is <strong>O(1)</strong> since it only requires a constant amount of additional space for the temporary variables used for swapping.</p>
+                <p>The space complexity of Bubble Sort is O(1) since it only requires a constant amount of additional space for the temporary variables used for swapping.</p>
 
                 <h3>Implementation</h3>
                 
@@ -127,10 +127,10 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
                 </ul>
 
                 <h3>Time Complexity</h3>
-                <p>The time complexity of Selection Sort in all cases (worst, average, and best) is <strong>O(n²)</strong>, where <strong>n</strong> is the number of elements in the array. This is because, for each element, we need to scan through the remaining unsorted elements to find the minimum.</p>
+                <p>The time complexity of Selection Sort in all cases (worst, average, and best) is O(n²), where n is the number of elements in the array. This is because, for each element, we need to scan through the remaining unsorted elements to find the minimum.</p>
 
                 <h3>Space Complexity</h3>
-                <p>The space complexity of Selection Sort is <strong>O(1)</strong> since it only requires a constant amount of additional space for the temporary variable used for swapping elements.</p>
+                <p>The space complexity of Selection Sort is O(1) since it only requires a constant amount of additional space for the temporary variable used for swapping elements.</p>
 
                 <h3>Implementation</h3>
                 
@@ -176,12 +176,12 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 64]`}
 
                 <h3>Time Complexity</h3>
                 <p>
-                    The time complexity of Insertion Sort in the worst and average case is <strong>O(n²)</strong>, where <strong>n</strong> is the number of elements in the array. In the best case, when the array is already sorted, the time complexity is <strong>O(n)</strong>.
+                    The time complexity of Insertion Sort in the worst and average case is O(n²), where n is the number of elements in the array. In the best case, when the array is already sorted, the time complexity is O(n).
                 </p>
 
                 <h3>Space Complexity</h3>
                 <p>
-                    The space complexity of Insertion Sort is <strong>O(1)</strong> since it only requires a constant amount of additional space for a few temporary variables used during the sorting process.
+                    The space complexity of Insertion Sort is O(1) since it only requires a constant amount of additional space for a few temporary variables used during the sorting process.
                 </p>
 
                 <h3>Implementation</h3>
@@ -218,9 +218,9 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 64]`}
                     <li>Recursively apply the above steps to the sub-arrays.</li>
                 </ul>
                 <h3>Time Complexity</h3>
-                <p>The time complexity of Quick Sort in the average case is <strong>O(n log n)</strong>, but in the worst case, it can be <strong>O(n²)</strong>.</p>
+                <p>The time complexity of Quick Sort in the average case is O(n log n), but in the worst case, it can be O(n²).</p>
                 <h3>Space Complexity</h3>
-                <p>The space complexity of Quick Sort is <strong>O(log n)</strong> due to the recursive stack space.</p>
+                <p>The space complexity of Quick Sort is O(log n) due to the recursive stack space.</p>
                 <h3>Implementation</h3>
                 
                     <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -260,9 +260,9 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
                     <li>Repeatedly merge sub-lists to produce new sorted sub-lists until there is only one sub-list remaining.</li>
                 </ul>
                 <h3>Time Complexity</h3>
-                <p>The time complexity of Merge Sort is <strong>O(n log n)</strong> in all cases (worst, average, and best).</p>
+                <p>The time complexity of Merge Sort is O(n log n) in all cases (worst, average, and best).</p>
                 <h3>Space Complexity</h3>
-                <p>The space complexity of Merge Sort is <strong>O(n)</strong> due to the temporary arrays used for merging.</p>
+                <p>The space complexity of Merge Sort is O(n) due to the temporary arrays used for merging.</p>
                 <h3>Implementation</h3>
                 
                     <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -308,9 +308,9 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
                 </p>
                 <h3>Operations</h3>
                 <ul>
-                    <li><strong>Push:</strong> Adds an element to the top of the stack.</li>
-                    <li><strong>Pop:</strong> Removes the element from the top of the stack.</li>
-                    <li><strong>Peek:</strong> Returns the top element without removing it.</li>
+                    <li>Push: Adds an element to the top of the stack.</li>
+                    <li>Pop: Removes the element from the top of the stack.</li>
+                    <li>Peek: Returns the top element without removing it.</li>
                 </ul>
                 <h3>Implementation</h3>
                 
@@ -356,9 +356,9 @@ console.log(stack.peek()); // Output: 1`}
                 </p>
                 <h3>Operations</h3>
                 <ul>
-                    <li><strong>Enqueue:</strong> Adds an element to the end of the queue.</li>
-                    <li><strong>Dequeue:</strong> Removes the element from the front of the queue.</li>
-                    <li><strong>Front:</strong> Returns the front element without removing it.</li>
+                    <li>Enqueue: Adds an element to the end of the queue.</li>
+                    <li>Dequeue: Removes the element from the front of the queue.</li>
+                    <li>Front: Returns the front element without removing it.</li>
                 </ul>
                 <h3>Implementation</h3>
                 
@@ -404,9 +404,9 @@ console.log(queue.front()); // Output: 2`}
                 </p>
                 <h3>Operations</h3>
                 <ul>
-                    <li><strong>Insert:</strong> Adds a new node to the linked list.</li>
-                    <li><strong>Delete:</strong> Removes a node from the linked list.</li>
-                    <li><strong>Search:</strong> Searches for a node in the linked list.</li>
+                    <li>Insert: Adds a new node to the linked list.</li>
+                    <li>Delete: Removes a node from the linked list.</li>
+                    <li>Search: Searches for a node in the linked list.</li>
                 </ul>
                 <h3>Implementation</h3>
                 
@@ -481,9 +481,9 @@ console.log(list.search(1)); // Output: false`}
                 </p>
                 <h3>Operations</h3>
                 <ul>
-                    <li><strong>Insert:</strong> Adds a new node to the doubly linked list.</li>
-                    <li><strong>Delete:</strong> Removes a node from the doubly linked list.</li>
-                    <li><strong>Search:</strong> Searches for a node in the doubly linked list.</li>
+                    <li>Insert: Adds a new node to the doubly linked list.</li>
+                    <li>Delete: Removes a node from the doubly linked list.</li>
+                    <li>Search: Searches for a node in the doubly linked list.</li>
                 </ul>
                 <h3>Implementation</h3>
                 
@@ -566,9 +566,9 @@ console.log(doublyList.search(1)); // Output: false`}
                 </p>
                 <h3>Operations</h3>
                 <ul>
-                    <li><strong>Insert:</strong> Adds a new node to the tree.</li>
-                    <li><strong>Delete:</strong> Removes a node from the tree.</li>
-                    <li><strong>Search:</strong> Searches for a node in the tree.</li>
+                    <li>Insert: Adds a new node to the tree.</li>
+                    <li>Delete: Removes a node from the tree.</li>
+                    <li>Search: Searches for a node in the tree.</li>
                 </ul>
                 <h3>Implementation</h3>
                 
@@ -645,8 +645,8 @@ console.log(tree.search(20)); // Output: false`}
                 </p>
                 <h3>Representation</h3>
                 <ul>
-                    <li><strong>Adjacency List:</strong> Each node has a list of connected nodes.</li>
-                    <li><strong>Adjacency Matrix:</strong> A 2D array where each cell represents the presence of an edge between nodes.</li>
+                    <li>Adjacency List: Each node has a list of connected nodes.</li>
+                    <li>Adjacency Matrix: A 2D array where each cell represents the presence of an edge between nodes.</li>
                 </ul>
                 <h3>Implementation (Adjacency List)</h3>
                 

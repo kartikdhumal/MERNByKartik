@@ -13,12 +13,12 @@ function EqualityComparison() {
 
             <section className="description-section">
                 <p className="description">
-                    In JavaScript, equality operators like <strong>double equals (==)</strong> and <strong>triple equals (===)</strong>
+                    In JavaScript, equality operators like double equals (==) and triple equals (===)
                     are used to compare two values. However, both operators work differently:
                 </p>
                 <ul className="comparison-list">
-                    <li><strong>Double Equals (==)</strong>: Converts both operands to the same type (type coercion) before comparison.</li>
-                    <li><strong>Triple Equals (===)</strong>: Compares both the value and type, making it a strict comparison without type coercion.</li>
+                    <li>Double Equals (==): Converts both operands to the same type (type coercion) before comparison.</li>
+                    <li>Triple Equals (===): Compares both the value and type, making it a strict comparison without type coercion.</li>
                 </ul>
             </section>
 
@@ -43,9 +43,9 @@ console.log(str === num ? "Both are same " : "Not same");
             <section className="key-difference">
                 <h2 className="code-title">Key Differences</h2>
                 <ul className="difference-list">
-                    <li><strong>Type coercion:</strong> The double equals operator converts the operands to the same type before comparison.</li>
-                    <li><strong>Strict comparison:</strong> The triple equals operator checks both the value and the type without converting them.</li>
-                    <li><strong>Usage:</strong> Prefer triple equals (<SyntaxHighlighter language="javascript" style={atomDark}>===</SyntaxHighlighter>) for strict comparisons, as it avoids unexpected behavior due to type coercion.</li>
+                    <li>Type coercion: The double equals operator converts the operands to the same type before comparison.</li>
+                    <li>Strict comparison: The triple equals operator checks both the value and the type without converting them.</li>
+                    <li>Usage: Prefer triple equals (<SyntaxHighlighter language="javascript" style={atomDark}>===</SyntaxHighlighter>) for strict comparisons, as it avoids unexpected behavior due to type coercion.</li>
                 </ul>
             </section>
         </div>

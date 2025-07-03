@@ -26,11 +26,3 @@ h4 {
     margin-top: 20px;
     color: rgb(255, 192, 203);
 }
-
-.code-block {
-    background-color: #f8f8f8;
-    padding: 10px;
-    border-radius: 5px;
-    overflow: auto;
-    border: 1px solid #ccc;
-}

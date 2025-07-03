@@ -37,20 +37,20 @@ function AsyncEventLoop() {
 
         <h3>STEP 1: Call Stack</h3>
         <p>
-          <strong>Description:</strong> The call stack is a LIFO (Last In, First Out) data structure that keeps track of function calls.<br />
-          <strong>Operation:</strong> When a function is called, it is pushed onto the call stack. When the function execution is complete, it is popped off the stack.
+          Description: The call stack is a LIFO (Last In, First Out) data structure that keeps track of function calls.<br />
+          Operation: When a function is called, it is pushed onto the call stack. When the function execution is complete, it is popped off the stack.
         </p>
 
         <h3>STEP 2: Callback Queue</h3>
         <p>
-          <strong>Description:</strong> Also known as the task queue, it is a queue that holds callback functions waiting to be executed.<br />
-          <strong>Operation:</strong> Once the Web API completes an asynchronous operation, it pushes the corresponding callback to the callback queue.
+          Description: Also known as the task queue, it is a queue that holds callback functions waiting to be executed.<br />
+          Operation: Once the Web API completes an asynchronous operation, it pushes the corresponding callback to the callback queue.
         </p>
 
         <h3>STEP 3: Event Loop</h3>
         <p>
-          <strong>Description:</strong> The event loop is a process that continuously checks the call stack and the callback queue.<br />
-          <strong>Operation:</strong>
+          Description: The event loop is a process that continuously checks the call stack and the callback queue.<br />
+          Operation:
           <ul>
             <li>The event loop checks if the call stack is empty.</li>
             <li>If the call stack is empty, the event loop takes the first callback from the callback queue and pushes it onto the call stack for execution.</li>
@@ -60,10 +60,10 @@ function AsyncEventLoop() {
 
         <h3>STEP 4: Execution</h3>
         <p>
-          <strong>Description:</strong> The function at the top of the call stack is executed. During this execution, if the function contains any asynchronous code, it may initiate further asynchronous operations.
+          Description: The function at the top of the call stack is executed. During this execution, if the function contains any asynchronous code, it may initiate further asynchronous operations.
         </p>
         <p>
-          <strong>Operation:</strong>
+          Operation:
           <ul>
             <li>The currently executing function is processed until it completes.</li>
             <li>If there are any asynchronous tasks (like setTimeout, Promises, etc.), they may be initiated within this function.</li>
@@ -73,10 +73,10 @@ function AsyncEventLoop() {
 
         <h3>STEP 5: Callback Execution</h3>
         <p>
-          <strong>Description:</strong> Once an asynchronous operation is completed, its callback function is placed in the callback queue, waiting to be executed.
+          Description: Once an asynchronous operation is completed, its callback function is placed in the callback queue, waiting to be executed.
         </p>
         <p>
-          <strong>Operation:</strong>
+          Operation:
           <ul>
             <li>The asynchronous operation signals that it has completed (e.g., data is fetched, a timer ends).</li>
             <li>The associated callback function is then moved to the callback queue.</li>
@@ -86,10 +86,10 @@ function AsyncEventLoop() {
 
         <h3>STEP 6: Repeat</h3>
         <p>
-          <strong>Description:</strong> The event loop continuously checks the status of the call stack and the callback queue, repeating the process to manage function execution.
+          Description: The event loop continuously checks the status of the call stack and the callback queue, repeating the process to manage function execution.
         </p>
         <p>
-          <strong>Operation:</strong>
+          Operation:
           <ul>
             <li>The event loop checks if the call stack is empty.</li>
             <li>If the call stack is empty, the event loop takes the first callback from the callback queue and pushes it onto the call stack for execution.</li>
@@ -134,11 +134,11 @@ console.log("End");
 
         <h3>Summary</h3>
         <ul>
-          <li><strong>Call Stack:</strong> Manages function calls and execution order.</li>
-          <li><strong>Web APIs:</strong> Handle asynchronous operations.</li>
-          <li><strong>Callback Queue:</strong> Stores callbacks from asynchronous operations.</li>
-          <li><strong>Event Loop:</strong> Manages execution order between the call stack and callback queue.</li>
-          <li><strong>Microtask Queue:</strong> Handles promise callbacks and other microtasks with higher priority than the callback queue.</li>
+          <li>Call Stack: Manages function calls and execution order.</li>
+          <li>Web APIs: Handle asynchronous operations.</li>
+          <li>Callback Queue: Stores callbacks from asynchronous operations.</li>
+          <li>Event Loop: Manages execution order between the call stack and callback queue.</li>
+          <li>Microtask Queue: Handles promise callbacks and other microtasks with higher priority than the callback queue.</li>
         </ul>
 
         <p>

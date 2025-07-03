@@ -19,10 +19,10 @@ function DataStructure() {
       <div className="method-section">
         <h3>4.1 Set</h3>
         <p>
-          <strong>Definition:</strong> A Set is a collection of unique values. It ensures that each value appears only once, making it ideal for storing distinct elements.
+          Definition: A Set is a collection of unique values. It ensures that each value appears only once, making it ideal for storing distinct elements.
         </p>
         <p>
-          <strong>Syntax:</strong> <SyntaxHighlighter language="javascript" style={atomDark}>new Set([iterable])</SyntaxHighlighter>
+          Syntax: <SyntaxHighlighter language="javascript" style={atomDark}>new Set([iterable])</SyntaxHighlighter>
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -61,10 +61,10 @@ function DataStructure() {
       <div className="method-section">
         <h3>4.2 Map</h3>
         <p>
-          <strong>Definition:</strong> A Map is a collection of key-value pairs where both keys and values can be of any type. It maintains the insertion order of the elements.
+          Definition: A Map is a collection of key-value pairs where both keys and values can be of any type. It maintains the insertion order of the elements.
         </p>
         <p>
-          <strong>Syntax:</strong> <SyntaxHighlighter language="javascript" style={atomDark}>new Map([iterable])</SyntaxHighlighter>
+          Syntax: <SyntaxHighlighter language="javascript" style={atomDark}>new Map([iterable])</SyntaxHighlighter>
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -102,10 +102,10 @@ function DataStructure() {
       <div className="method-section">
         <h3>4.3 WeakSet</h3>
         <p>
-          <strong>Definition:</strong> A WeakSet is similar to a Set, but it only stores objects and does not prevent garbage collection of its items. This is useful for storing objects without affecting their lifecycle.
+          Definition: A WeakSet is similar to a Set, but it only stores objects and does not prevent garbage collection of its items. This is useful for storing objects without affecting their lifecycle.
         </p>
         <p>
-          <strong>Syntax:</strong> <SyntaxHighlighter language="javascript" style={atomDark}>new WeakSet([iterable])</SyntaxHighlighter>
+          Syntax: <SyntaxHighlighter language="javascript" style={atomDark}>new WeakSet([iterable])</SyntaxHighlighter>
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -134,10 +134,10 @@ function DataStructure() {
       <div className="method-section">
         <h3>4.4 WeakMap</h3>
         <p>
-          <strong>Definition:</strong> A WeakMap is similar to a Map , but it only allows objects as keys and does not prevent garbage collection of its keys. This is useful for associating data with objects without interfering with their garbage collection.
+          Definition: A WeakMap is similar to a Map , but it only allows objects as keys and does not prevent garbage collection of its keys. This is useful for associating data with objects without interfering with their garbage collection.
         </p>
         <p>
-          <strong>Syntax:</strong> <SyntaxHighlighter language="javascript" style={atomDark}>new WeakMap([iterable])</SyntaxHighlighter>
+          Syntax: <SyntaxHighlighter language="javascript" style={atomDark}>new WeakMap([iterable])</SyntaxHighlighter>
         </p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`
@@ -167,10 +167,10 @@ function DataStructure() {
       <div className="method-section">
         <h3>4.5 Summary of Data Structures</h3>
         <ul>
-          <li><strong>Set:</strong> Stores unique values of any type.</li>
-          <li><strong>Map:</strong> Stores key-value pairs with keys of any type.</li>
-          <li><strong>WeakSet:</strong> Stores objects with weak references, allowing garbage collection.</li>
-          <li><strong>WeakMap:</strong> Stores key-value pairs where keys are objects with weak references.</li>
+          <li>Set: Stores unique values of any type.</li>
+          <li>Map: Stores key-value pairs with keys of any type.</li>
+          <li>WeakSet: Stores objects with weak references, allowing garbage collection.</li>
+          <li>WeakMap: Stores key-value pairs where keys are objects with weak references.</li>
         </ul>
       </div>
     </div>

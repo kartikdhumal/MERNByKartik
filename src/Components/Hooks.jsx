@@ -27,14 +27,14 @@ function HooksFAQ() {
                             <li>Try to keep all states in top of the function. It creates consistency</li>
                         </ul>
                         <br />
-                        <strong>Parameters:</strong>
+                        Parameters:
                         <ul>
-                            <li><strong>initialState</strong>: The initial state value.</li>
+                            <li>initialState: The initial state value.</li>
                         </ul>
-                        <strong>Returns:</strong>
+                        Returns:
                         <ul>
-                            <li><strong>state</strong>: The current state value.</li>
-                            <li><strong>setState</strong>: A function to update the state.</li>
+                            <li>state: The current state value.</li>
+                            <li>setState: A function to update the state.</li>
                         </ul>
                     </p>
                 </div>
@@ -84,10 +84,10 @@ function HooksFAQ() {
                             <li>If we put dependencies in an array, it will be called after every dependency change.</li>
                         </ul>
                         <br />
-                        <strong>Parameters:</strong>
+                        Parameters:
                         <ul>
-                            <li><strong>effect</strong>: The function containing the side-effect logic. It can optionally return a cleanup function.</li>
-                            <li><strong>dependencies</strong>: An optional array of dependencies. The effect is only re-run if one of the dependencies has changed since the last render.</li>
+                            <li>effect: The function containing the side-effect logic. It can optionally return a cleanup function.</li>
+                            <li>dependencies: An optional array of dependencies. The effect is only re-run if one of the dependencies has changed since the last render.</li>
                         </ul>
                     </p>
                 </div>
@@ -132,9 +132,9 @@ function HooksFAQ() {
                     <div className="faq-item">
                         <h3 className="faq-question">What is the useRouteError hook? How is it used?</h3>
                         <p className="faq-answer">
-                            The <SyntaxHighlighter language="javascript" style={atomDark}>useRouteError</SyntaxHighlighter> hook is used in React Router to manage errors that occur during routing. It allows you to display customized error pages or perform alternative actions when a route error arises.
+                            The useRouteError hook is used in React Router to manage errors that occur during routing. It allows you to display customized error pages or perform alternative actions when a route error arises.
                             <br />
-                            <strong>Example:</strong>
+                            Example:
                             <br />
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`const routeError = useRouteError();
@@ -158,7 +158,7 @@ function HooksFAQ() {
                         <p className="faq-answer">
                             The useParams hook is used to access the parameters (URL segments) of the current route in React Router. It returns an object containing key-value pairs of the URL parameters.
                             <br />
-                            <strong>Example:</strong>
+                            Example:
                             <br />
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`const { id } = useParams();
@@ -255,7 +255,7 @@ setData(response);
                         <p className="faq-answer">
                             The useNavigate hook is used for imperative navigation in React Router. It returns a function that can be used to navigate to different routes programmatically.
                             <br />
-                            <strong>Example:</strong>
+                            Example:
                             <br />
                             <div>
                                 <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -277,7 +277,7 @@ setData(response);
                         <p className="faq-answer">
                             The useContext hook is a function that lets you access the context values in a functional component. It takes a context object (created using <SyntaxHighlighter language="javascript" style={atomDark}>React.createContext</SyntaxHighlighter>) and returns the current context value for that context.
                             <br />
-                            <strong>MyComponent.jsx</strong>
+                            MyComponent.jsx
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`import React, { useContext } from 'react';
 import { UserContext } from '../context/userContext';
@@ -295,7 +295,7 @@ const MyComponent = () => {
 
                         </p>
                         <p className='faq-answer'>
-                            <strong>index.js</strong>
+                            index.js
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`
 import React, { createContext } from 'react';
@@ -332,7 +332,7 @@ root.render(
                         <p className="faq-answer">
                             The useDispatch hook returns a reference to the dispatch function from the Redux store. You use this function to dispatch actions.
                             <br />
-                            <strong>Example:</strong>
+                            Example:
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`const handleRemove = (index) => {
   dispatch(removeItem(index));
@@ -346,7 +346,7 @@ root.render(
                         <p className="faq-answer">
                             The useSelector hook allows you to extract data from the Redux store state using a selector function.
                             <br />
-                            <strong>Example:</strong>
+                            Example:
                             <br />
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`import { useSelector } from 'react-redux';
@@ -362,7 +362,7 @@ const cartItems = useSelector((state) => state.cart.items);`}
                         <p className="faq-answer">
                             The useStore hook provides access to the entire Redux store instance. It returns an Object
                             <br />
-                            <strong>Example:</strong>
+                            Example:
                             <br />
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`import { useStore } from 'react-redux';
@@ -386,7 +386,7 @@ console.log(store.getState());`}
                             <br />This is particularly useful for preventing heavy computations from freezing the app.<br />
                             useMemo is used to memoize the result of a computation or value.
                             <br />
-                            <strong>Example:</strong>
+                            Example:
                             <br />
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`const prime = useMemo(() => findPrime(text), [text]);`}
@@ -404,7 +404,7 @@ console.log(store.getState());`}
                             The useCallback hook returns a memoized callback function. It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.
                             <br />
                             useCallback is used to memoize a callback function.<br />
-                            <strong>Example:</strong>
+                            Example:
                             <br />
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`const memoizedCallback = useCallback(() => { doSomething(a, b); }, [a, b]);`}
@@ -421,7 +421,7 @@ console.log(store.getState());`}
                         <p className="faq-answer">
                             The useRef hook returns a mutable ref object whose .current property is initialized to the passed argument (initial value). The returned object will persist for the full lifetime of the component.
                             <br />
-                            <strong>Example 1</strong>
+                            Example 1
                             <br />
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`
@@ -445,7 +445,7 @@ function SimpleUseRefExample() {
 export default SimpleUseRefExample;
     `}
                             </SyntaxHighlighter>
-                            <strong>Example 2</strong>
+                            Example 2
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`
 import React, { useRef, useState } from 'react';
@@ -494,7 +494,7 @@ export default CricketerForm;
                             <p className="faq-answer">
                                 The useReducer hook used for state management, particularly when dealing with complex state logic that involves multiple sub-values or when the next state depends on the previous state.
                                 <br />
-                                <strong>Example:</strong>
+                                Example:
                                 <br />
                                 <SyntaxHighlighter language="javascript" style={atomDark}>
                                     {`
@@ -540,7 +540,7 @@ export default CricketerForm;
                             <p className="faq-answer">
                                 The useReducer Provides information about the current URL. It's useful for getting the current path, search, and hash values from the URL.
                                 <br />
-                                <strong>Example:</strong>
+                                Example:
                                 <br />
                                 <SyntaxHighlighter language="javascript" style={atomDark}>
                                     {`

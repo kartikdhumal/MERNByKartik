@@ -19,7 +19,8 @@ function Navbar({ name }) {
                         <div className="navbar-item"><Link to="/propsdrilling" className="navbar-link">Props Drilling / Lifting stateup</Link></div>
                         <div className="navbar-item"><Link to="/context" className="navbar-link">Context</Link></div>
                         <div className="navbar-item"><Link to="/redux" className="navbar-link">React Redux</Link></div>
-                        <div className="navbar-item"><Link to="/templateliteral" className="navbar-link">Template Literal</Link></div>
+                         <div className="navbar-item"><Link to="/performance-optimization" className="navbar-link">Performance Optimization</Link></div>
+                        <div className="navbar-item"><Link to="/errorboundary" className="navbar-link">Error Boundary</Link></div>
                         <div className="navbar-item"><Link to="/testing" className="navbar-link">Testing</Link></div>
                     </div>
                 </div>
@@ -70,6 +71,7 @@ function Navbar({ name }) {
                             <div className="navbar-item"><Link to="/closures" className="navbar-link">Closures</Link></div>
                             <div className="navbar-item"><Link to="/destructuring" className="navbar-link">Destructuring</Link></div>
                             <div className="navbar-item"><Link to="/dom-manipulation" className="navbar-link">DOM Manipulation</Link></div>
+                            <div className="navbar-item"><Link to="/templateliteral" className="navbar-link">Template Literal</Link></div>
                             <div className="navbar-item"><Link to="/errors" className="navbar-link">Errors</Link></div>
                             <div className="navbar-item"><Link to="/es6" className="navbar-link">ES6</Link></div>
                             <div className="navbar-item"><Link to="/functions" className="navbar-link">Functions</Link></div>
@@ -81,7 +83,6 @@ function Navbar({ name }) {
                             <div className="navbar-item"><Link to="/object-methods" className="navbar-link">Object Methods</Link></div>
                             <div className="navbar-item"><Link to="/datastructure" className="navbar-link">Data structure</Link></div>
                             <div className="navbar-item"><Link to="/oops" className="navbar-link">OOPS</Link></div>
-                            <div className="navbar-item"><Link to="/performance-optimization" className="navbar-link">Performance Optimization</Link></div>
                             <div className="navbar-item"><Link to="/promise-apis" className="navbar-link">Promises & APIs</Link></div>
                             <div className="navbar-item"><Link to="/scope-chain" className="navbar-link">Scope Chain</Link></div>
                             <div className="navbar-item"><Link to="/shadowing" className="navbar-link">Shadowing</Link></div>
