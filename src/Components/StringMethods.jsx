@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/shadowing.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function StringMethods() {
   useEffect(() => {
-
-    window.scrollTo(0,0);
+   window.scrollTo(0,0);
   }, []);
 
   return (
-    <div className="shadowing-container">
+    <div className="debounce-container">
       <h1>JavaScript String Methods</h1>
       <p>
         This component covers some common string methods in JavaScript, 

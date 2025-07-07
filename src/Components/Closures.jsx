@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/closures.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -12,7 +12,7 @@ function Closures() {
     }, []);
 
     return (
-        <div className="closures-container">
+        <div className="debounce-container">
             <h1 className="title">Closures</h1>
 
             <section className="method-section">

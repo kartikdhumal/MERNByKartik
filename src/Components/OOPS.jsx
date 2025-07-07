@@ -1,19 +1,18 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/oops.css'
+import '../styles/debouncing.css'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function OOPS() {
 
   useEffect(() => {
-
-    window.scrollTo(0,0);
+   window.scrollTo(0,0);
   }, []);
 
   return (
-    <div className='oops-container'>
+    <div className='debounce-container'>
       <h1 className="title">JavaScript OOP Concepts</h1>
 
       <div className="method-section">

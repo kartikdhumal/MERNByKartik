@@ -1,3 +1,7 @@
+*{
+  list-style: none;
+}
+
 .debounce-container {
   padding: 30px;
   max-width: 900px;
@@ -11,6 +15,11 @@ h1 {
   color: #ffa500;
   text-align: center;
   margin-bottom: 30px;
+}
+
+h6 {
+  font-size: 16px;
+  color: #ffa500;
 }
 
 .example-section {
@@ -35,4 +44,78 @@ h1 {
   outline: none;
   background-color: #2d333b;
   color: #fff;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 15px;
+  overflow: hidden;
+  min-width: 600px;
+}
+
+.comparison-table thead {
+  background-color: #16103a;
+  color: white;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 15px;
+  border: 1px solid #bebebe;
+  font-weight: 500;
+}
+
+.comparison-table td {
+  background-color: #0d1117;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #f4fdf4;
+}
+
+ol,
+ul li {
+  list-style: none;
+  list-style-type: none;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+strong {
+  color: #4ADE80;
+  font-weight: 600;
+}
+
+.method-section {
+  background: #081222;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-question {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #48d998;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.faq-answer {
+  font-size: 18px;
+  color: #DCDCDC;
+  line-height:1;
 }

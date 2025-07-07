@@ -20,7 +20,7 @@ import { Component, act } from "react"
 //     expect(heading).toBeInTheDocument(); // Assertion
 // })
 
-// test('Should show Kartik in Home', () => {
+// test('Should show Guddu in Home', () => {
 //     render(<Home />); // Render
 //     const heading = screen.getByText("Submit");  // Query
 //     expect(heading).toBeInTheDocument(); // Assertion
@@ -55,12 +55,12 @@ import { Component, act } from "react"
 
 // test('SHould load Component with props', () => {
 //     render(<Component info={data} />);
-//     const name = screen.getByText('My Name is Kartik');
+//     const name = screen.getByText('My Name is Guddu');
 //     name.toBeInTheDocument();
 // })
 // data = {
-//     1: "kartik",
-//     2: "dhumal"
+//     1: "Guddu",
+//     2: "Pandit"
 // };
 
 // global.fetch = jest.fn(() => {

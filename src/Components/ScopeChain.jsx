@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/ScopeChain.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -11,7 +11,7 @@ function ScopeChain() {
   }, []);
 
   return (
-    <div className="scopechain-container">
+    <div className="debounce-container">
       <h1>Scope Chain in JavaScript</h1>
       <p>
         The scope chain in JavaScript determines the accessibility of variables and functions within a particular context.

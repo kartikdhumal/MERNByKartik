@@ -1,10 +1,10 @@
 import React from 'react'
 import domFaqData from '../utils/que'
-import '../styles/dom.css'
+import '../styles/debouncing.css'
 
 function DOM() {
     return (
-        <div className="faq-container">
+        <div className="debounce-container">
             <h1>DOM and Virtual DOM FAQ</h1>
             {domFaqData.map((item, index) => (
                 <div key={index} className="faq-item">

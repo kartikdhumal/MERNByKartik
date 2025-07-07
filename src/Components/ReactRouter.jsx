@@ -1,15 +1,15 @@
 import React from 'react';
-import '../styles/router.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 
-function ReactRouter() {
+function ReactRouter() {  
   return (
-    <div className="router-container">
+    <div className="debounce-container">
       <h1 className="router-title">React Router Documentation</h1>
 
-      <SyntaxHighlighter language="javascript" style={atomDark}>
+      <SyntaxHighlighter language="bash" style={atomDark}>
         npm i -D react-router-dom@latest
       </SyntaxHighlighter>
       <div className="router-section">
@@ -61,17 +61,13 @@ function ReactRouter() {
         <h2 className="router-subtitle">Link</h2>
         <p className="router-description">
           The Link component is used to create hyperlinks for navigating between
-          different routes in your application. It's similar to the anchor tag <SyntaxHighlighter language="javascript" style={atomDark}>{'<a>'}</SyntaxHighlighter>
+          different routes in your application. It's similar to the anchor tag {'<a>'}
           but it prevents the browser from performing a full page refresh.
+          A Link is a wrapper over anchor tag
         </p>
-        <ul>
-          <li>
-            A Link is a wrapper over anchor tag
-          </li>
           <SyntaxHighlighter language="javascript" style={atomDark}>
             {`<Link to="/login"> Login </Link>`}
           </SyntaxHighlighter>
-        </ul>
       </div>
 
       

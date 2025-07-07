@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/performanceoptimization.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -12,19 +12,19 @@ function PerformanceOptimization() {
   }, []);
 
   return (
-    <div className='performance-optimization-container'>
+    <div className='debounce-container'>
       <h1 className="title">Performance and Optimization</h1>
 
       {/* 1. Debouncing and Throttling */}
       <div className="method-section">
-        <h3>1. Debouncing and Throttling</h3>
+        <h2>1. Debouncing and Throttling</h2>
         <p>
           Definition: Debouncing and throttling are techniques used to control how often a function is executed in response to events, improving performance by limiting the number of times a function is called.
         </p>
 
         {/* 1.1 Debouncing */}
         <div className="sub-section">
-          <h4>1.1 Debouncing</h4>
+          <h3>1.1 Debouncing</h3>
           <p>
             Definition: Debouncing ensures that a function is not called multiple times in quick succession. It is useful for optimizing performance of operations like resizing, scrolling, or keypress events.
           </p>
@@ -52,7 +52,7 @@ function PerformanceOptimization() {
 
         {/* 1.2 Throttling */}
         <div className="sub-section">
-          <h4>1.2 Throttling</h4>
+          <h3>1.2 Throttling</h3>
           <p>
             Definition: Throttling ensures that a function is called at most once in a specified period. It is useful for rate-limiting operations like scrolling, mouse movement, or API calls.
           </p>
@@ -92,14 +92,14 @@ function PerformanceOptimization() {
 
       {/* 2. Lazy Loading */}
       <div className="method-section">
-        <h3>2. Lazy Loading</h3>
+        <h2>2. Lazy Loading</h2>
         <p>
           Definition: Lazy loading is a design pattern that defers the loading of non-critical resources at page load time. Instead, these resources are loaded when they are needed. This improves initial load time and overall performance.
         </p>
 
         {/* 2.1 Lazy Loading Images */}
         <div className="sub-section">
-          <h4>2.1 Lazy Loading Images</h4>
+          <h3>2.1 Lazy Loading Images</h3>
           <p>
             Definition: Lazy loading images involves loading images only when they are about to enter the viewport, reducing initial load time and saving bandwidth.
           </p>
@@ -134,7 +134,7 @@ function PerformanceOptimization() {
 
         {/* 2.2 Lazy Loading JavaScript Modules */}
         <div className="sub-section">
-          <h4>2.2 Lazy Loading JavaScript Modules</h4>
+          <h3>2.2 Lazy Loading JavaScript Modules</h3>
           <p>
             Definition: Lazy loading JavaScript modules involves loading modules only when they are needed, reducing the initial bundle size and improving load times.
           </p>
@@ -156,14 +156,14 @@ function PerformanceOptimization() {
 
       {/* 3. Memory Management */}
       <div className="method-section">
-        <h3>3. Memory Management</h3>
+        <h2>3. Memory Management</h2>
         <p>
           Definition: Memory management involves efficiently managing memory allocation and garbage collection to prevent leaks and optimize performance.
         </p>
 
         {/* 3.1 Avoiding Memory Leaks */}
         <div className="sub-section">
-          <h4>3.1 Avoiding Memory Leaks</h4>
+          <h3>3.1 Avoiding Memory Leaks</h3>
           <p>
             Definition: Ensuring that objects are no longer referenced when they are not needed allows the garbage collector to reclaim memory.
           </p>
@@ -184,7 +184,7 @@ function PerformanceOptimization() {
 
         {/* 3.2 Using WeakMap and WeakSet */}
         <div className="sub-section">
-          <h4>3.2 Using WeakMap and WeakSet</h4>
+          <h3>3.2 Using WeakMap and WeakSet</h3>
           <p>
             Definition: WeakMap and WeakSet hold weak references to objects, allowing them to be garbage collected when no longer in use.
           </p>
@@ -220,14 +220,14 @@ function PerformanceOptimization() {
 
       {/* 4. Profiling and Debugging */}
       <div className="method-section">
-        <h3>4. Profiling and Debugging</h3>
+        <h2>4. Profiling and Debugging</h2>
         <p>
           Definition: Profiling and debugging help identify performance bottlenecks and optimize code execution.
         </p>
 
         {/* 4.1 Using console.time and console.timeEnd */}
         <div className="sub-section">
-          <h4>4.1 Using console.time and console.timeEnd</h4>
+          <h3>4.1 Using console.time and console.timeEnd</h3>
           <p>
             Definition: These methods measure the time taken by a block of code to execute.
           </p>
@@ -247,7 +247,7 @@ function PerformanceOptimization() {
 
         {/* 4.2 Using the Performance API */}
         <div className="sub-section">
-          <h4>4.2 Using the Performance API</h4>
+          <h3>4.2 Using the Performance API</h3>
           <p>
             Definition: The Performance API provides methods to measure and analyze the performance of web applications.
           </p>
@@ -267,7 +267,7 @@ function PerformanceOptimization() {
 
         {/* 4.3 Using Browser Developer Tools */}
         <div className="sub-section">
-          <h4>4.3 Using Browser Developer Tools</h4>
+          <h3>4.3 Using Browser Developer Tools</h3>
           <p>
             Definition: Browser developer tools (e.g., Chrome DevTools) offer built-in profiling and debugging tools to analyze performance and debug code.
           </p>

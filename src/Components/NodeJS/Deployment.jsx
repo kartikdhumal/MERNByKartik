@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/deployment.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Deployment() {
     return (
-        <div className="deploy-container">
+        <div className="debounce-container">
             <header className="deploy-header">
                 <h1 className="deploy-title">Node.js Application Deployment</h1>
                 <p className="deploy-subtitle">Production-ready deployment guide</p>
@@ -34,7 +34,7 @@ function Deployment() {
 
                 <div className="config-section">
                     <h2 className="section-title">Configuration Setup</h2>
-                    <div className="code-block">
+                    <div >
                         <div className="code-header">
                             <span>config.js</span>
                         </div>
@@ -49,7 +49,7 @@ function Deployment() {
 module.exports = config;`}</SyntaxHighlighter>
                     </div>
 
-                    <div className="code-block">
+                    <div >
                         <div className="code-header">
                             <span>.env</span>
                         </div>
@@ -66,20 +66,20 @@ CORS_ORIGIN=https://yourapp.com`}</SyntaxHighlighter>
                     <div className="steps-container">
                         <div className="step-item">
                             <h3>1. Build Application</h3>
-                            <div className="terminal-block">
-                                <SyntaxHighlighter language="javascript" style={atomDark}>npm run build</SyntaxHighlighter>
+                            <div>
+                                <SyntaxHighlighter language="bash" style={atomDark}>npm run build</SyntaxHighlighter>
                             </div>
                         </div>
                         <div className="step-item">
                             <h3>2. Run Tests</h3>
-                            <div className="terminal-block">
-                                <SyntaxHighlighter language="javascript" style={atomDark}>npm test</SyntaxHighlighter>
+                            <div>
+                                <SyntaxHighlighter language="bash" style={atomDark}>npm test</SyntaxHighlighter>
                             </div>
                         </div>
                         <div className="step-item">
                             <h3>3. Start Server</h3>
-                            <div className="terminal-block">
-                                <SyntaxHighlighter language="javascript" style={atomDark}>npm start</SyntaxHighlighter>
+                            <div>
+                                <SyntaxHighlighter language="bash" style={atomDark}>npm start</SyntaxHighlighter>
                             </div>
                         </div>
                     </div>

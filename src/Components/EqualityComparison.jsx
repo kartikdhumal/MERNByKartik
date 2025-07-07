@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/equalityComparison.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function EqualityComparison() {
 
     return (
-        <div className="comparison-container">
+        <div className="debounce-container">
             <h1 className="title">Double vs. Triple Equality in JavaScript</h1>
 
             <section className="description-section">

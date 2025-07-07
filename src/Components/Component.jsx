@@ -1,5 +1,5 @@
 import React, { useCallback, useContext, useState } from 'react';
-import '../styles/Component.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -7,7 +7,7 @@ function Component() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="com-container">
+    <div className="debounce-container">
       <h1 className="com-title">Understanding Components in React</h1>
 
       <h2 className="com-subtitle">What is a Component?</h2>
@@ -223,7 +223,7 @@ Parent class ComponentDidMount
         </div>
 
       </p>
-      Interview Questions
+      <h2 className="com-subtitle">Interview Questions</h2>
       <ol className="com-list">
         <div className="faq-item">
           <h6>What is JSX, and why is it used in React?</h6>

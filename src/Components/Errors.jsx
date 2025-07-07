@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/errors.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -12,7 +12,7 @@ function Errors() {
     }, []);
 
     return (
-        <div className="errors-container">
+        <div className="debounce-container">
             <h1 className="title">Types of Errors in JavaScript</h1>
 
             <div className="method-section">

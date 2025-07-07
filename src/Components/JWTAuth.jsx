@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/jwtauth.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -7,7 +7,7 @@ function JWTAuth() {
     let userId = "userId"
     let token = "token"
     return (
-        <div className="jwt-auth-container">
+        <div className="debounce-container">
             <h1 className="jwt-auth-title">JWT Authentication Guide</h1>
 
             <section className="jwt-section" id="introduction">
@@ -157,7 +157,7 @@ export default JWTAuth;`}
                         <SyntaxHighlighter language="javascript" style={atomDark}>
                             {`
 async function login(username, password) {
-    const response = await fetch('https://kartikpandit.com/login', {
+    const response = await fetch('https://Guddupandit.com/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

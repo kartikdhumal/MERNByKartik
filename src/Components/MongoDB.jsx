@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/mongodb.css'
+import '../styles/debouncing.css'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -21,7 +21,7 @@ const Mongodb = () => {
   }, []);
 
   return (
-    <div className="mongodb-documentation">
+    <div className="debounce-container">
       <section id="introduction">
         <h1>What is MongoDB?</h1>
 

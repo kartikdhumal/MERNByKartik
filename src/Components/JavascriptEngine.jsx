@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/higherorderfun.css';
+import '../styles/debouncing.css';
 
 function JavascriptEngine() {
   useEffect(() => {
@@ -9,10 +9,10 @@ function JavascriptEngine() {
   }, []);
 
   return (
-    <div className="es6-container">
+    <div className="debounce-container">
       <h1 className="title">JavaScript Overview</h1>
 
-      <div className="method-section">
+      <div >
         <h3>What is JavaScript?</h3>
         <p>
           JavaScript is a powerful programming language that can add interactivity to a website.
@@ -20,7 +20,7 @@ function JavascriptEngine() {
         </p>
       </div>
 
-      <div className="method-section">
+      <div >
         <h3>Basic JavaScript</h3>
         <ul>
           <li>Primarily used for client-side scripting, enabling dynamic changes to web pages without requiring a page reload.</li>
@@ -32,7 +32,7 @@ function JavascriptEngine() {
         </ul>
       </div>
 
-      <div className="method-section">
+      <div >
         <h3>Advantages of JavaScript</h3>
         <ul>
           <li>Enhanced User Experience: Enables interactive and dynamic web experiences, improving user engagement and satisfaction.</li>
@@ -42,7 +42,7 @@ function JavascriptEngine() {
         </ul>
       </div>
 
-      <div className="method-section">
+      <div >
         <h3>Server-Side JavaScript</h3>
         <p>
           JavaScript can also be used on the server-side. Node.js is a popular runtime environment that allows developers to run JavaScript code on servers, enabling full-stack JavaScript development.
@@ -50,7 +50,7 @@ function JavascriptEngine() {
         </p>
       </div>
 
-      <div className="method-section">
+      <div >
         <h3>Frameworks and Libraries</h3>
         <p>JavaScript has numerous frameworks and libraries that simplify web development and provide additional functionality. Some popular ones include:</p>
         <ul>
@@ -64,7 +64,7 @@ function JavascriptEngine() {
         <p>These frameworks and libraries help streamline development, improve code quality, and accelerate the creation of web applications.</p>
       </div>
 
-      <div className="method-section">
+      <div >
         <h3>JavaScript Engine</h3>
         <p>
           JavaScript is a scripting language and is not directly understood by computers. However, browsers have inbuilt JavaScript engines that help them to understand and interpret JavaScript code.
@@ -73,7 +73,7 @@ function JavascriptEngine() {
         <p>A JavaScript engine is a computer program that executes JavaScript code and converts it into a computer-understandable language.</p>
 
         <h4>Browser JavaScript Engines</h4>
-        <table className="table">
+        <table className="comparison-table">
           <thead>
             <tr>
               <th>Browser</th>
@@ -101,7 +101,7 @@ function JavascriptEngine() {
         </table>
       </div>
 
-      <div className="method-section">
+      <div >
         <h3>Common Questions</h3>
         <h4>1. What is the difference between Java and JavaScript?</h4>
         <p>

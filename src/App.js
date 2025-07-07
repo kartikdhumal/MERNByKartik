@@ -8,7 +8,7 @@ import appStore from "./utils/appStore";
 function App() {
   return (
     <div>
-      <Navbar name="Kartik Dhumal"/>
+      <Navbar/>
       {/*   <Outlet/>  / for children */}
     </div>
   );

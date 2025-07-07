@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/functions.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -12,7 +12,7 @@ function Functions() {
     }, []);
 
     return (
-        <div className="es6-container">
+        <div className="debounce-container">
             <h1 className="title">Functions</h1>
 
             <section className="method-section">
@@ -159,7 +159,7 @@ functionsArray[1](); // Output: Second function`}
 
             <section className="method-section">
                 <h2 className="method-title">Differences Between Normal Functions and Arrow Functions</h2>
-                <table className='table'>
+                <table className='comparison-table'>
                     <thead>
                         <tr>
                             <th>ASPECT</th>
@@ -184,7 +184,7 @@ functionsArray[1](); // Output: Second function`}
                             <td>Better</td>
                         </tr>
                         <tr>
-                            <td><SyntaxHighlighter language="javascript" style={atomDark}>this</SyntaxHighlighter> keyword behavior</td>
+                            <td>this keyword behavior</td>
                             <td>Inherits from a broader scope</td>
                             <td>Refers to the object it belongs to</td>
                         </tr>
@@ -205,8 +205,8 @@ functionsArray[1](); // Output: Second function`}
                         </tr>
                         <tr>
                             <td>Call, apply, and bind</td>
-                            <td>Do not change <SyntaxHighlighter language="javascript" style={atomDark}>this</SyntaxHighlighter></td>
-                            <td>Can change the value of <SyntaxHighlighter language="javascript" style={atomDark}>this</SyntaxHighlighter></td>
+                            <td>Do not change this</td>
+                            <td>Can change the value of this</td>
                         </tr>
                         <tr>
                             <td>Lexical scoping</td>

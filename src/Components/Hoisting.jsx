@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/higherorderfun.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Hoisting() {
   useEffect(() => {
-
-    window.scrollTo(0,0);
+   window.scrollTo(0,0);
   }, []);
 
   return (
-    <div className="es6-container">
+    <div className="debounce-container">
       <h1 className="title">Hoisting in JavaScript</h1>
 
       <div className="method-section">

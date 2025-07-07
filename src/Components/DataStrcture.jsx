@@ -1,19 +1,18 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/datastructure.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function DataStructure() {
 
   useEffect(() => {
-
-    window.scrollTo(0,0);
+   window.scrollTo(0,0);
   }, []);
 
   return (
-    <div className='data-structures-container'>
+    <div className='debounce-container'>
       <h1 className="title">JavaScript Data Structures</h1>
 
       <div className="method-section">
@@ -72,10 +71,10 @@ function DataStructure() {
     const user = new Map();
 
     user.set('id', 1);
-    user.set('name', 'Kartik');
+    user.set('name', 'Guddu');
     user.set('age', 22);
 
-    console.log(user.get('name')); // Kartik
+    console.log(user.get('name')); // Guddu
 
     console.log(user.has('age')); // true
 
@@ -85,7 +84,7 @@ function DataStructure() {
     }
     // Output:
     // id: 1
-    // name: Kartik
+    // name: Guddu
     // age: 22
 
     // Methods of Map:

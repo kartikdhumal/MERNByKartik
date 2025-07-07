@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/filesystem.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function FileSystem() {
     return (
-        <div className="fs-container">
+        <div className="debounce-container">
             <header className="fs-header">
                 <h1 className="fs-title">File System Operations in Node.js</h1>
                 <p className="fs-subtitle">Working with Files and Directories</p>
@@ -72,7 +72,7 @@ fs.appendFile('output.txt', '\\nNew line of text', (err) => {
 
                 <div className="practice-block">
                     <h2 className="section-title">Testing File Operations</h2>
-                    <div className="terminal-block">
+                    <div>
                         <SyntaxHighlighter language="javascript" style={atomDark}>node readFile.js</SyntaxHighlighter>
                         <SyntaxHighlighter language="javascript" style={atomDark}>node writeFile.js</SyntaxHighlighter>
                         <SyntaxHighlighter language="javascript" style={atomDark}>cat output.txt</SyntaxHighlighter>

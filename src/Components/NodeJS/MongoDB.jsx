@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/mongoconn.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function MongoDB() {
     return (
-        <div className="mongo-container">
+        <div className="debounce-container">
             <header className="mongo-header">
                 <h1 className="mongo-title">MongoDB with Node.js</h1>
                 <p className="mongo-subtitle">Database Integration and CRUD Operations</p>
@@ -14,11 +14,11 @@ function MongoDB() {
             <section className="mongo-content">
                 <div className="setup-block">
                     <h2 className="section-title">Database Setup</h2>
-                    <div className="terminal-block">
+                    <div>
                         <SyntaxHighlighter language="javascript" style={atomDark}>npm install mongoose</SyntaxHighlighter>
                     </div>
 
-                    <div className="code-block">
+                    <div>
                         <div className="code-header">
                             <span className="file-name">config/db.js</span>
                         </div>
@@ -44,7 +44,7 @@ module.exports = connectDB;`}</SyntaxHighlighter>
 
                 <div className="schema-block">
                     <h2 className="section-title">Schema Definition</h2>
-                    <div className="code-block">
+                    <div>
                         <div className="code-header">
                             <span className="file-name">models/User.js</span>
                         </div>
@@ -75,7 +75,7 @@ module.exports = mongoose.model('User', userSchema);`}</SyntaxHighlighter>
 
                 <div className="operations-block">
                     <h2 className="section-title">CRUD Operations</h2>
-                    <div className="code-block">
+                    <div>
                         <div className="code-header">
                             <span className="file-name">controllers/userController.js</span>
                         </div>

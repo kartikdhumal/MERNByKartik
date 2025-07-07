@@ -1,29 +1,19 @@
-import React, { useState, useCallback } from 'react';
+import { delay } from 'lodash';
+import React, { useState, useCallback, useEffect } from 'react';
 
 function DebounceExample() {
     const [value, setValue] = useState('');
     const [debouncedVal, setDebouncedVal] = useState('');
 
-    function debounce(func, delay) {
-        let timer;
-        return function (...args) {
-            clearTimeout(timer);
-            timer = setTimeout(() => {
-                func.apply(this, args);
-            }, delay);
-        };
-    }
-
-    const debouncedInput = useCallback(
-        debounce((input) => {
-            setDebouncedVal(input);
-        }, 500),
-        []
-    );
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setDebouncedVal(value);
+        }, 1000)
+        return () => clearTimeout(timer);
+    }, [value])
 
     const handleChange = (e) => {
         setValue(e.target.value);
-        debouncedInput(e.target.value);
     };
 
     return (

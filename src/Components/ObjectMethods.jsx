@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/objectmethods.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -12,7 +12,7 @@ function ObjectMethods() {
   }, []);
 
   return (
-    <div className='doc-container'>
+    <div className='debounce-container'>
       <h1 className="doc-title">Object Methods</h1>
 
       <section className="doc-section">
@@ -25,7 +25,7 @@ function ObjectMethods() {
           {`
 const student = {
   id: 1,
-  name: "Kartik",
+  name: "Guddu",
   age: 22
 };
 
@@ -45,12 +45,12 @@ console.log(Object.keys(student));
         <SyntaxHighlighter language="javascript" style={atomDark}>{
           `const student1 = {
   id: 1,
-  name: "Kartik",
+  name: "Guddu",
   age: 22
 };
 
 console.log(Object.values(student1));
-// Output: [ 1, 'Kartik', 22 ]`
+// Output: [ 1, 'Guddu', 22 ]`
         }</SyntaxHighlighter>
 
       </section>
@@ -64,7 +64,7 @@ console.log(Object.values(student1));
         <SyntaxHighlighter language="javascript" style={atomDark}>
           {`const student2 = {
   id: 1,
-  name: "Kartik",
+  name: "Guddu",
   age: 22
 };
 
@@ -75,7 +75,7 @@ Object.entries(student2).forEach(([key, value]) => {
 
 // Output:
 // id is 1
-// name is Kartik
+// name is Guddu
 // age is 22`}
         </SyntaxHighlighter>
 
@@ -91,7 +91,7 @@ Object.entries(student2).forEach(([key, value]) => {
         <SyntaxHighlighter language="javascript" style={atomDark}>{
           `const student3 = {
   id: 1,
-  name: "Kartik",
+  name: "Guddu",
   age: 22
 };
 
@@ -116,7 +116,7 @@ console.log(student3);
         <SyntaxHighlighter language="javascript" style={atomDark}>{
           `const student4 = {
   id: 1,
-  name: "Kartik",
+  name: "Guddu",
   age: 22
 };
 
@@ -135,7 +135,7 @@ console.log(Object.isSealed(student4)); // true`
         <SyntaxHighlighter language="javascript" style={atomDark}>{
           `const student5 = {
   id: 1,
-  name: "Kartik",
+  name: "Guddu",
   age: 22
 };
 
@@ -194,7 +194,7 @@ values.map((val) => console.log(val));`
 
         <SyntaxHighlighter language="javascript" style={atomDark}>
           {`const person = {
-  name: "Kartik",
+  name: "Guddu",
   address: {
     city: "Pune"
   }
@@ -218,7 +218,7 @@ console.log(deepCopy.address.city); // Mumbai`}
 
         <SyntaxHighlighter language="javascript" style={atomDark}>
           {`const person = {
-  name: "Kartik",
+  name: "Guddu",
   address: {
     city: "Pune"
   }

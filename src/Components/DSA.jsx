@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 import 'prismjs/themes/prism.css';
-import '../styles/dsa.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -13,7 +13,7 @@ function DSA() {
     }, []);
 
     return (
-        <div className="shadowing-container">
+        <div className="debounce-container">
             <h1>Data Structures & Algorithms</h1>
             <p>
                 This component covers some important concepts in Data Structures and Algorithms, providing definitions and explanations.

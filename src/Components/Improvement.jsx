@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/improvement.css';
+import '../styles/debouncing.css';
 
 function Improvement() {
     const interviewQuestions = [
@@ -45,20 +45,20 @@ function Improvement() {
     ];
 
     return (
-        <div className="main-container">
+        <div className="debounce-container">
             <div className="interview-container">
                 <h1 className="interview-main-title">Technical Interview Questions</h1>
 
                 {interviewQuestions.map((interview) => (
                     <section key={interview.id} className="interview-group">
                         <h2 className="interview-section-title">
-                            <span className="icon">🎯</span> {interview.title}
+                            {interview.title}
                         </h2>
                         <div className="questions-grid">
                             {interview.questions.map((question, index) => (
-                                <div key={index} className="question-card">
+                                <p key={index} className="question-card">
                                     {index + 1}. {question}
-                                </div>
+                                </p>
                             ))}
                         </div>
                     </section>

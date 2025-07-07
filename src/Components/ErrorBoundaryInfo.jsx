@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/ErrorBoundary.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function ErrorBoundaryInfo() {
   return (
-    <div className="error-boundary-container">
+    <div className="debounce-container">
       <h1>Error Boundaries in React</h1>
       <p>
         Error Boundaries are special components in React that catch runtime errors in child components during rendering, lifecycle methods, and constructors.

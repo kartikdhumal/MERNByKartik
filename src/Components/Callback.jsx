@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../styles/callback.css'
+import '../styles/debouncing.css'
 
 import 'prismjs/themes/prism.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -7,12 +7,11 @@ import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Callback() {
   useEffect(() => {
-
-    window.scrollTo(0,0);
+   window.scrollTo(0,0);
   }, []);
 
   return (
-    <div className="callback-container">
+    <div className="debounce-container">
       <h1 className="title">Callback Functions</h1>
       
       <section className="method-section">

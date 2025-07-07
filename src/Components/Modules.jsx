@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/higherorderfun.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -11,7 +11,7 @@ function Modules() {
   }, []);
 
   return (
-    <div className="es6-container">
+    <div className="debounce-container">
       <h1 className="title">JavaScript Modules</h1>
 
       <div className="method-section">
@@ -27,8 +27,8 @@ function Modules() {
         <p>
           There are two types of exports in JavaScript modules: default exports and named exports.
         </p>
-        <ul>
-          <li>
+        <div>
+          <div>
             Default Export:
             <p> A module can have one default export, which can be imported without curly braces. </p>
             
@@ -40,8 +40,8 @@ export default function greet(name) {
     import greet from './math'
 `}</SyntaxHighlighter>
             
-          </li>
-          <li>
+          </div>
+          <div>
             Named Export: A module can have multiple named exports. These must be imported with curly braces.
             
               <SyntaxHighlighter language="javascript" style={atomDark}>{`//
@@ -50,8 +50,8 @@ export const pi = 3.14159;
 import { pi } from './math'
 `}</SyntaxHighlighter>
             
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
 
       <div className="method-section">

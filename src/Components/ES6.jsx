@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/es6.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function ES6() {
     useEffect(() => {
-    
         window.scrollTo(0,0);
     }, []);
 
     return (
-        <div className="es6-container">
+        <div className="debounce-container">
             <h1 className="title">JavaScript ES6 Features Documentation</h1>
 
             <section className="method-section">

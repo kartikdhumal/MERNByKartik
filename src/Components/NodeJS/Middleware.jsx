@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/middleware.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Middleware() {
     return (
-        <div className="middleware-container">
+        <div className="debounce-container">
             <header className="middleware-header">
                 <h1 className="middleware-title">Express Middleware</h1>
                 <p className="middleware-subtitle">Understanding and Implementing Express.js Middleware</p>
@@ -20,7 +20,7 @@ function Middleware() {
                         request-response cycle.
                     </p>
 
-                    <div className="code-block">
+                    <div >
                         <div className="code-header">
                             <span className="file-name">middleware.js</span>
                         </div>
@@ -53,11 +53,11 @@ app.use('/api', authMiddleware); // Route-specific middleware`}</SyntaxHighlight
 
                 <div className="implementation-block">
                     <h2 className="section-title">Common Middleware Packages</h2>
-                    <div className="terminal-block">
+                    <div>
                         <SyntaxHighlighter language="javascript" style={atomDark}>npm install cors morgan helmet</SyntaxHighlighter>
                     </div>
 
-                    <div className="code-block">
+                    <div >
                         <div className="code-header">
                             <span className="file-name">app.js</span>
                         </div>

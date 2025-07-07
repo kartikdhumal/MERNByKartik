@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/nodejs.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Modules() {
     return (
-        <div className="node-container">
+        <div className="debounce-container">
             <header className="node-header">
                 <h1 className="node-title">Node.js Modules & npm</h1>
             </header>
@@ -25,7 +25,7 @@ function Modules() {
                             <div className="editor-header">
                                 <span className="file-name">core-modules.js</span>
                             </div>
-                            <div className="code-content">
+                            <div >
                                 <SyntaxHighlighter language="javascript" style={atomDark}>
                                     {`// Using core modules
 const fs = require('fs');
@@ -49,7 +49,7 @@ fs.readFile('example.txt', 'utf8', (err, data) => {
                             <div className="editor-header">
                                 <span className="file-name">math.js</span>
                             </div>
-                            <div className="code-content">
+                            <div >
                                 <SyntaxHighlighter language="javascript" style={atomDark}>
                                     {`// Creating a local module
 const add = (a, b) => a + b;

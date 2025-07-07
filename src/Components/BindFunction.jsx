@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../styles/AsyncEvent.css';
+import '../styles/debouncing.css';
 import 'prismjs/themes/prism.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -10,7 +10,7 @@ function BindFunction() {
   }, []);
 
   return (
-    <div className="array-methods-container">
+    <div className="debounce-container">
       <h1 className="title">Function call(), apply(), and bind()</h1>
 
       {/* call() */}
@@ -51,8 +51,8 @@ console.log(result); // Output: Guddu Pandit from Gaya, India`}
         </p>
         <SyntaxHighlighter language="javascript" style={atomDark}>
           {`const person = {
-  firstName: "Kartik",
-  lastName: "Dhumal",
+  firstName: "Guddu",
+  lastName: "Pandit",
   fullName: function () {
     return this.firstName + " " + this.lastName;
   }

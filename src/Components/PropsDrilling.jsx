@@ -1,14 +1,14 @@
 // PropsDrilling.js
 
 import React, { useState } from 'react';
-import '../styles/PropsDrilling.css'
+import '../styles/debouncing.css'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function PropsDrilling() {
 
   return (
-    <div className="component-container">
+    <div className="debounce-container">
       <h1>Props Drilling</h1>
 
       <p>

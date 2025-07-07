@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/nodejs.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Introduction() {
     return (
-        <div className="node-container">
+        <div className="debounce-container">
             <header className="node-header">
                 <h1 className="node-title">Introduction to Node.js</h1>
             </header>
@@ -25,7 +25,7 @@ function Introduction() {
                         <div className="editor-header">
                             <span className="file-name">hello.js</span>
                         </div>
-                        <div className="code-content">
+                        <div >
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`// Your first Node.js program
 console.log("Welcome to Node.js!");
@@ -67,7 +67,7 @@ setTimeout(() => {
                         <div className="editor-header">
                             <span className="file-name">server.js</span>
                         </div>
-                        <div className="code-content">
+                        <div >
                             <SyntaxHighlighter language="javascript" style={atomDark}>
                                 {`const http = require('http');
 

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import '../styles/hooks.css';
+import '../styles/debouncing.css';
 import { useNavigate, useParams, useRouteError } from 'react-router-dom';
 import { userContext } from '..';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -13,7 +13,7 @@ function HooksFAQ() {
         navigate('/new-route');
     };
     return (
-        <div className="faq-container">
+        <div className="debounce-container">
             <h1 className="main-title">React Hooks</h1>
 
             <div className="hook-section">
@@ -116,7 +116,7 @@ function HooksFAQ() {
                 <div className="faq-item">
                     <h3 className="faq-question">How do you conditionally run an effect in useEffect?</h3>
                     <p className="faq-answer">
-                        You can conditionally run an effect by specifying a dependency array as the second argument to <SyntaxHighlighter language="javascript" style={atomDark}>useEffect</SyntaxHighlighter>. The effect will only re-run if one of the dependencies has changed.
+                        You can conditionally run an effect by specifying a dependency array as the second argument to useEffect. The effect will only re-run if one of the dependencies has changed.
                     </p>
                 </div>
 
@@ -275,7 +275,7 @@ setData(response);
                         <p className="faq-answer"> {'Name : ' + name} - {info} </p>
                         <p className="faq-answer"> {'Info : ' + info} </p>
                         <p className="faq-answer">
-                            The useContext hook is a function that lets you access the context values in a functional component. It takes a context object (created using <SyntaxHighlighter language="javascript" style={atomDark}>React.createContext</SyntaxHighlighter>) and returns the current context value for that context.
+                            The useContext hook is a function that lets you access the context values in a functional component. It takes a context object (created using React.createContext) and returns the current context value for that context.
                             <br />
                             MyComponent.jsx
                             <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -308,7 +308,7 @@ export const UserContext = createContext();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <UserContext.Provider value={{ name: 'Kartik Dhumal', info: 'React info' }}>
+  <UserContext.Provider value={{ name: 'Guddu Pandit', info: 'React info' }}>
     <React.StrictMode>
       <Router>
         <Routes>

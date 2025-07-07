@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/shadowing.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -11,7 +11,7 @@ function ThisKeyword() {
   }, []);
 
   return (
-    <div className="shadowing-container">
+    <div className="debounce-container">
       <h1>JavaScript `this` Keyword</h1>
       <p>
         The `this` keyword in JavaScript refers to the context in which a function is executed.
@@ -31,9 +31,9 @@ function ThisKeyword() {
       
         <SyntaxHighlighter language="javascript" style={atomDark}>
           {`const obj = {
-  name: "Kartik",
+  name: "Guddu",
   greet() {
-    console.log("Hello, " + this.name); // Output: "Hello, Kartik"
+    console.log("Hello, " + this.name); // Output: "Hello, Guddu"
   }
 };
 obj.greet();`}
@@ -47,8 +47,8 @@ obj.greet();`}
           {`function Person(name) {
   this.name = name;
 }
-const person1 = new Person("Kartik");
-console.log(person1.name); // Output: "Kartik"`}
+const person1 = new Person("Guddu");
+console.log(person1.name); // Output: "Guddu"`}
         </SyntaxHighlighter>
       
 
@@ -61,10 +61,10 @@ console.log(person1.name); // Output: "Kartik"`}
     this.name = name;
   }
   greet() {
-    console.log("Hello, " + this.name); // Output: "Hello, Kartik"
+    console.log("Hello, " + this.name); // Output: "Hello, Guddu"
   }
 }
-const person2 = new Person("Kartik");
+const person2 = new Person("Guddu");
 person2.greet();`}
         </SyntaxHighlighter>
       
@@ -74,7 +74,7 @@ person2.greet();`}
       
         <SyntaxHighlighter language="javascript" style={atomDark}>
           {`const obj2 = {
-  name: "Kartik",
+  name: "Guddu",
   greet: () => {
     console.log("Hello, " + this.name); // Output: "Hello, undefined"
   }
@@ -103,8 +103,8 @@ document.body.appendChild(button);`}
           {`function greet() {
   console.log("Hello, " + this.name);
 }
-const obj3 = { name: "Kartik" };
-greet.call(obj3); // Output: "Hello, Kartik"`}
+const obj3 = { name: "Guddu" };
+greet.call(obj3); // Output: "Hello, Guddu"`}
         </SyntaxHighlighter>
       
 

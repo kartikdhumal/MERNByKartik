@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../styles/webapis.css';
+import '../styles/debouncing.css';
 
 import 'prismjs/themes/prism.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -12,7 +12,7 @@ function WebAPIs() {
   }, []);
 
   return (
-    <div className="webapis-container">
+    <div className="debounce-container">
       <h1>Web APIs Documentation</h1>
 
       <h2>1. Web Storage API</h2>
@@ -68,11 +68,11 @@ getData();`}
       <p>Send system-level notifications to the user.</p>
       <SyntaxHighlighter language="javascript" style={atomDark}>
         {`if (window.Notification.permission === "granted") {
-  new Notification("Hello, Kartik!");
+  new Notification("Hello, Guddu!");
 } else if (Notification.permission !== "denied") {
   Notification.requestPermission().then((permission) => {
     if (permission === "granted") {
-      new Notification("Hello, Kartik!");
+      new Notification("Hello, Guddu!");
     }
   });
 }`}
@@ -82,7 +82,7 @@ getData();`}
       <p>Store small pieces of data sent with each HTTP request.</p>
       <SyntaxHighlighter language="javascript" style={atomDark}>
         {`// Set a cookie
-document.cookie = "username=kartik; expires=Fri, 31 Dec 2025 23:59:59 GMT";
+document.cookie = "username=Guddu; expires=Fri, 31 Dec 2025 23:59:59 GMT";
 
 // Read cookies
 console.log(document.cookie); // Shows all cookies
@@ -92,20 +92,34 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT";`}
       </SyntaxHighlighter>
 
       <h2>🔍 Difference Between Web APIs</h2>
-      <p className="doc-description">
-        sessionStorage vs localStorage: <br />
-        sessionStorage stores data only for the duration of the page session — once you close the tab, it’s gone. On the other hand, localStorage keeps the data even after closing the browser, unless it’s manually cleared. Both only store strings and are limited to the same origin.
-      </p>
+      <li className="faq-item">
+        <h3 className="faq-question">Q1: What is the difference between sessionStorage and localStorage?</h3>
+        <p className="faq-answer">
+          ➤ <strong>sessionStorage</strong> stores data only for the duration of the page session — once you close the tab, the data is gone.
+          ➤ <strong>localStorage</strong> keeps the data even after the browser is closed, unless it is manually cleared.
+          ➤ Both can only store strings and work on the same-origin policy.
+        </p>
+      </li>
 
-      <p className="doc-description">
-        localStorage vs Cookies: <br />
-        localStorage stores data on the client side and does not get sent to the server with every request. It can store more data (usually ~5MB), and is ideal for saving user preferences. Cookies, however, are smaller in size (~4KB) and are automatically sent with every HTTP request, making them useful for authentication and tracking — but they can slow down requests if misused.
-      </p>
+      <li className="faq-item">
+        <h3 className="faq-question">Q2: What is the difference between localStorage and cookies?</h3>
+        <p className="faq-answer">
+          ➤ <strong>localStorage</strong> stores data on the client side and doesn’t send it with every HTTP request. It can store up to ~5MB and is ideal for saving user preferences.
+          ➤ <strong>Cookies</strong> are smaller (~4KB), sent with every request automatically, and are typically used for authentication and tracking.
+          ➤ Excessive use of cookies can slow down requests since they’re always sent to the server.
+        </p>
+      </li>
 
-      <p className="doc-description">
-        sessionStorage vs Cookies: <br />
-        While both are short-term storage mechanisms, sessionStorage is completely client-side and disappears when the tab is closed. Cookies can have an expiration time or persist until manually deleted, and they travel with every HTTP request, making them more suitable for server-side processes like login sessions.
-      </p>
+      <li className="faq-item">
+        <h3 className="faq-question">Q3: What is the difference between sessionStorage and cookies?</h3>
+        <p className="faq-answer">
+          ➤ <strong>sessionStorage</strong> is purely client-side and data is cleared once the tab is closed.
+          ➤ <strong>Cookies</strong> can be configured to expire at a specific time or persist until manually removed.
+          ➤ Cookies are sent with every HTTP request, making them suitable for server-related features like login sessions.
+          ➤ By default, if you don’t set an expiry time — the cookie becomes a session cookie, and it will be deleted when the browser or tab is closed.
+        </p>
+      </li>
+
 
     </div>
   );

@@ -1,11 +1,11 @@
 import React, { StrictMode } from 'react';
-import '../styles/Package.css'
+import '../styles/debouncing.css'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const Package = () => {
     return (
-        <div className="container">
+        <div className="debounce-container">
             <h1>Project Dependencies and Tools</h1>
             <ul>
                 <li>

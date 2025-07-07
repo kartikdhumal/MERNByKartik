@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem, clearItem, removeItem, updateItem } from '../utils/cartSlice';
-import '../styles/Redux.css';
+import '../styles/debouncing.css';
 
 function Redux() {
     const dispatch = useDispatch();
@@ -34,7 +34,7 @@ function Redux() {
     };
 
     return (
-        <div className="container">
+        <div className="debounce-container">
             <h1>Cricketer List</h1>
             <div className="input-section">
                 <input

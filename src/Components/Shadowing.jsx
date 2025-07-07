@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/shadowing.css'; // Ens
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Shadowing() {
   useEffect(() => {
-
-    window.scrollTo(0,0);
+   window.scrollTo(0,0);
   }, []);
 
   return (
-    <div className="shadowing-container">
+    <div className="debounce-container">
       <h1>Variable Shadowing in JavaScript</h1>
       <p>
         Variable shadowing occurs when a variable declared within a certain scope shares the same name as a variable in an outer scope, effectively "shadowing" it.

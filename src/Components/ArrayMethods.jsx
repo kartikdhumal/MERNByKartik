@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/ArrayMethods.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -11,7 +11,7 @@ function ArrayMethods() {
   }, []);
 
   return (
-    <div className="array-methods-container">
+    <div className="debounce-container">
       <h1 className="title">JavaScript Array Methods</h1>
 
       <section className="method-section">
@@ -361,7 +361,7 @@ for (let value of valuesIterator) {
         <p>The Array.from() method creates a new array from any array-like or iterable object.</p>
         
           <SyntaxHighlighter language="javascript" style={atomDark}>
-            {`let newArray = Array.from("Shraddha");
+            {`let newArray = Array.from("Sweety");
 console.log(newArray); // ["S", "h", "r", "a", "d", "d", "h", "a"]
 }`}
           </SyntaxHighlighter>

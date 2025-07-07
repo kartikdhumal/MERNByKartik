@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/routing.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Routing() {
     return (
-        <div className="routing-container">
+        <div className="debounce-container">
             <h1 className="routing-title">Express Routing</h1>
 
             <div className="routing-theory">

@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/express.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Express() {
     return (
-        <div className="express-container">
+        <div className="debounce-container">
             <header className="express-header">
                 <h1 className="express-title">Express.js Framework</h1>
                 <p className="express-subtitle">Building Web Applications with Node.js</p>
@@ -14,12 +14,12 @@ function Express() {
             <section className="express-content">
                 <div className="setup-block">
                     <h2 className="section-title">Initial Setup</h2>
-                    <div className="terminal-block">
+                    <div >
                         <SyntaxHighlighter language="javascript" style={atomDark}>npm init -y</SyntaxHighlighter>
                         <SyntaxHighlighter language="javascript" style={atomDark}>npm install express</SyntaxHighlighter>
                     </div>
 
-                    <div className="code-block">
+                    <div>
                         <div className="code-header">
                             <span className="file-name">app.js</span>
                         </div>
@@ -61,13 +61,13 @@ app.listen(port, () => {
 
                 <div className="testing-block">
                     <h2 className="section-title">API Testing</h2>
-                    <div className="terminal-block">
+                    <div >
                         <SyntaxHighlighter language="javascript" style={atomDark}>curl http://localhost:3000</SyntaxHighlighter>
                         <SyntaxHighlighter language="javascript" style={atomDark}>curl http://localhost:3000/users/123</SyntaxHighlighter>
                         <SyntaxHighlighter language="javascript" style={atomDark}>curl -X POST -H "Content-Type: application/json" -d {"\"name\":\"John\""} http://localhost:3000/users</SyntaxHighlighter>
                     </div>
                 </div>
-            </section>
+            </section>  
         </div>
     );
 }

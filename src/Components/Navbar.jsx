@@ -15,6 +15,7 @@ function Navbar({ name }) {
                         <div className="navbar-item"><Link to="/dom" className="navbar-link">DOM & Virtual DOM</Link></div>
                         <div className="navbar-item"><Link to="/hooks" className="navbar-link">Hooks</Link></div>
                         <div className="navbar-item"><Link to="/router" className="navbar-link">React Router DOM</Link></div>
+                        <div className="navbar-item"><Link to="/props" className="navbar-link">Props</Link></div>
                         <div className="navbar-item"><Link to="/lazyloading" className="navbar-link">Lazy Loading</Link></div>
                         <div className="navbar-item"><Link to="/propsdrilling" className="navbar-link">Props Drilling / Lifting stateup</Link></div>
                         <div className="navbar-item"><Link to="/context" className="navbar-link">Context</Link></div>
@@ -22,6 +23,7 @@ function Navbar({ name }) {
                          <div className="navbar-item"><Link to="/performance-optimization" className="navbar-link">Performance Optimization</Link></div>
                         <div className="navbar-item"><Link to="/errorboundary" className="navbar-link">Error Boundary</Link></div>
                         <div className="navbar-item"><Link to="/testing" className="navbar-link">Testing</Link></div>
+                        <div className="navbar-item"><Link to="/bestpractises" className="navbar-link">Best Practises</Link></div>
                     </div>
                 </div>
                 <div className="navbar-section">
@@ -66,7 +68,7 @@ function Navbar({ name }) {
                             <div className="navbar-item"><Link to="/array-methods" className="navbar-link">Array Methods</Link></div>
                             <div className="navbar-item"><Link to="/async-await" className="navbar-link">Async Await</Link></div>
                             <div className="navbar-item"><Link to="/asynchronous-eventloop" className="navbar-link">Asynchronous and EventLoop</Link></div>
-                            <div className="navbar-item"><Link to="/bind-function" className="navbar-link">Bind Function</Link></div>
+                            <div className="navbar-item"><Link to="/bind-function" className="navbar-link">Call, Bind, Apply</Link></div>
                             <div className="navbar-item"><Link to="/callback" className="navbar-link">Callback</Link></div>
                             <div className="navbar-item"><Link to="/closures" className="navbar-link">Closures</Link></div>
                             <div className="navbar-item"><Link to="/destructuring" className="navbar-link">Destructuring</Link></div>
@@ -77,7 +79,6 @@ function Navbar({ name }) {
                             <div className="navbar-item"><Link to="/functions" className="navbar-link">Functions</Link></div>
                             <div className="navbar-item"><Link to="/higher-order-functions" className="navbar-link">Higher Order Functions</Link></div>
                             <div className="navbar-item"><Link to="/hoisting" className="navbar-link">Hoisting</Link></div>
-                            <div className="navbar-item"><Link to="/mongodb" className="navbar-link">MongoDB</Link></div>
                             <div className="navbar-item"><Link to="/javascript-engine" className="navbar-link">JavaScript Engine</Link></div>
                             <div className="navbar-item"><Link to="/modules" className="navbar-link">Modules</Link></div>
                             <div className="navbar-item"><Link to="/object-methods" className="navbar-link">Object Methods</Link></div>

@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/higherorderfun.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function HigherOrderFunctions() {
   useEffect(() => {
-
-    window.scrollTo(0,0);
+   window.scrollTo(0,0);
   }, []);
 
   return (
-    <div className="es6-container">
+    <div className="debounce-container">
       <h1 className="title">Higher-Order Functions in JavaScript</h1>
       <div className="method-section">
         <h3>What is a Higher-Order Function?</h3>
@@ -26,7 +25,7 @@ function HigherOrderFunctions() {
         
           <SyntaxHighlighter language="javascript" style={atomDark}>{`function myName(title) {
     title();
-    console.log(" Kartik Dhumal ");
+    console.log(" Guddu Pandit ");
 }
 
 function title() {
@@ -34,7 +33,7 @@ function title() {
 }
 
 myName(title); // Output: ---- My Name ----
-                  //          Kartik Dhumal`}</SyntaxHighlighter>
+                  //          Guddu Pandit`}</SyntaxHighlighter>
         
         <p>
           In this example, myName is a higher-order function because it takes another function title as its argument.

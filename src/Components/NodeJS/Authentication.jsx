@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/authentication.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Authentication() {
     return (
-        <div className="auth-container">
+        <div className="debounce-container">
             <header className="auth-header">
                 <h1 className="auth-title">Authentication in Node.js</h1>
                 <p className="auth-subtitle">Implementation of JWT-based Authentication</p>
@@ -33,7 +33,7 @@ function Authentication() {
                     <h2 className="section-title">Implementation Guide</h2>
                     <div className="setup-section">
                         <h3 className="subsection-title">Initial Setup</h3>
-                        <div className="terminal-block">
+                        <div>
                             <SyntaxHighlighter language="javascript" style={atomDark}>npm install jsonwebtoken bcryptjs</SyntaxHighlighter>
                         </div>
                     </div>

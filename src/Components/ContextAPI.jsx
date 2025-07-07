@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/contextAPI.css';
-import Context from './Context';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -103,7 +102,7 @@ function TodoApp() {
 export default TodoApp;`;
 
   return (
-    <div className="context-api-container">
+    <div className="debounce-container">
       <div className="context-api-info">
         <h2>What is Context and Context API</h2>
         <p>

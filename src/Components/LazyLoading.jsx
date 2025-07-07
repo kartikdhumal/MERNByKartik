@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/LazyLoading.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function LazyLoading() {
   return (
-    <div className="lazy-loading-container">
+    <div className="debounce-container">
       <h1>Lazy Loading in React</h1>
 
       <h2>Introduction</h2>

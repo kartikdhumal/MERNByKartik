@@ -14,7 +14,6 @@ import DOM from './Components/DOM';
 import HooksFAQ from './Components/Hooks';
 import ReactRouter from './Components/ReactRouter';
 import PropsDrilling from './Components/PropsDrilling';
-import Context from './Components/Context';
 import ReactRedux from './Components/ReactRedux';
 import ContextAPI from './Components/ContextAPI';
 import TemplateLiteral from './Components/TemplateLiteral';
@@ -66,6 +65,8 @@ import NodeDeployment from './Components/NodeJS/Deployment';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 import Debouncing from './Components/Debouncing';
 import ErrorBoundaryInfo from './Components/ErrorBoundaryInfo';
+import PropsInfo from './Components/PropsInfo';
+import ReactBestPractises from './Components/ReactBestPractises';
 
 const LazyLoading = lazy(() => import('./Components/LazyLoading'));
 
@@ -123,6 +124,12 @@ export const myRouter = createBrowserRouter([
   },{
      path: '/datastructure',
      element: <DataStrcture/>
+  },{
+     path: '/props',
+     element: <PropsInfo/>
+  },{
+      path:'/bestpractises',
+      element: <ReactBestPractises/>
   },
   {
     path: '/functions',
@@ -325,7 +332,7 @@ const Root = () => {
   return (
      <Provider store={appStore}>
     <todoContext.Provider value={{ todos, addTodo, removeTodo, toggleTodo }}>
-      <userContext.Provider value={{ name: 'Kartik Dhumal', info: 'This is my React info' }}>
+      <userContext.Provider value={{ name: 'Kartik Pandit', info: 'This is my React info' }}>
         <React.StrictMode>
           <ErrorBoundary>
             <RouterProvider router={myRouter} />

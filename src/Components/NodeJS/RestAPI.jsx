@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../styles/restapi.css';
+import '../../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function RestAPI() {
     return (
-        <div className="rest-container">
+        <div className="debounce-container">
             <header className="rest-header">
                 <h1 className="rest-title">Building REST APIs with Node.js</h1>
                 <p className="rest-subtitle">Create scalable and maintainable APIs using Express</p>

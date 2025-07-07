@@ -4,7 +4,7 @@ import '../styles/Home.css';
 function Home() {
     return (
         <div className="home-container">
-            <h1>Master React.js By Kartik Dhumal</h1>
+            <h1>Master React.js By Guddu Pandit</h1>
             <button>Submit</button>
         </div>
     );

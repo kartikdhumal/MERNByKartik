@@ -1,12 +1,12 @@
 import React from 'react';
 import Redux from './Redux';
-import '../styles/ReactRedux.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function ReactRedux() {
     return (
-        <div className="component-container">
+        <div className="debounce-container">
             <h1>React Redux</h1>
             <div className="documentation">
                 <h2>What is Redux?</h2>
@@ -144,7 +144,7 @@ const myRouter = createBrowserRouter([{
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={appStore}>
-    <userContext.Provider value={{ name: 'Kartik Dhumal', info: 'This is my React info' }}>
+    <userContext.Provider value={{ name: 'Guddu Pandit', info: 'This is my React info' }}>
       <React.StrictMode>
         <RouterProvider router={myRouter} />
       </React.StrictMode>

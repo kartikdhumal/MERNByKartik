@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/templateLiteral.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -18,7 +18,7 @@ not \${2 * a + b}.\`);
 // not 20."`;
 
     return (
-        <div className="template-literal-container">
+        <div className="debounce-container">
             <h1>Template Literals (Template Strings)</h1>
             <p>
                 Template literals are enclosed by backtick (<SyntaxHighlighter language="javascript" style={atomDark}>`</SyntaxHighlighter>) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.

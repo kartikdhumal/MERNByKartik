@@ -1,25 +1,24 @@
 import React, { useEffect } from 'react';
 
 import 'prismjs/themes/prism.css';
-import '../styles/promises.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Promises() {
   useEffect(() => {
-
-    window.scrollTo(0,0);
+   window.scrollTo(0,0);
   }, []);
 
   return (
-    <div className="promises-container">
+    <div className="debounce-container">
       <h1>Promises in JavaScript</h1>
       <p>A Promise is an object representing the eventual completion or failure of an asynchronous operation.</p>
 
       <h2>Promise Constructor</h2>
       <p>
         The promise constructor takes only one argument, which is a callback function.
-        The callback function takes two arguments: <SyntaxHighlighter language="javascript" style={atomDark}>resolve</SyntaxHighlighter> and <SyntaxHighlighter language="javascript" style={atomDark}>reject</SyntaxHighlighter>.
+        The callback function takes two arguments: resolve and reject.
       </p>
       
         <SyntaxHighlighter language="javascript" style={atomDark}>

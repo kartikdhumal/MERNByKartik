@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/Testing.css';
+import '../styles/debouncing.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Testing() {
     return (
-        <div className="testing-container">
+        <div className="debounce-container">
             <h2>Introduction to Testing in React</h2>
             <p>
                 Testing in React is essential for ensuring that your application behaves as expected and remains stable
@@ -168,8 +168,8 @@ import '@testing-library/jest-dom/extend-expect';
 import Component from '../Component';
 
 test('Should load Component with props', () => {
-    render(<Component info={{ 1: "kartik", 2: "dhumal" }} />);
-    const name = screen.getByText('My Name is Kartik');
+    render(<Component info={{ 1: "Guddu", 2: "Pandit" }} />);
+    const name = screen.getByText('My Name is Guddu');
     expect(name).toBeInTheDocument();
 });`}
                 </SyntaxHighlighter>
@@ -224,7 +224,7 @@ import '@testing-library/jest-dom/extend-expect';
 import Component from '../Component';
 
 test('Should load Component with props', async () => {
-    const data = { 1: "kartik", 2: "dhumal" };
+    const data = { 1: "Guddu", 2: "Pandit" };
     global.fetch = jest.fn(() => {
         return Promise.resolve({
             json: () => {
@@ -234,7 +234,7 @@ test('Should load Component with props', async () => {
     });
 
     render(<Component info={data} />);
-    const name = await screen.findByText('My Name is Kartik');
+    const name = await screen.findByText('My Name is Guddu');
     expect(name).toBeInTheDocument();
 });`}
                 </SyntaxHighlighter>
