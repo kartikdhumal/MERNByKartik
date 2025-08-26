@@ -156,7 +156,7 @@ strong {
 @media screen and (max-width: 480px) {
   .debounce-container {
     width: 100%;
-    padding: 2px 10px;
+    padding: 5px 20px;
   }
 
    .comparison-table th,
