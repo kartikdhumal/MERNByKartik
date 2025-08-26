@@ -8,76 +8,124 @@ function Middleware() {
         <div className="debounce-container">
             <header className="middleware-header">
                 <h1 className="middleware-title">Express Middleware</h1>
-                <p className="middleware-subtitle">Understanding and Implementing Express.js Middleware</p>
+                <p className="middleware-subtitle">
+                    Understanding Middleware in Express.js with Real-World Examples
+                </p>
             </header>
 
             <section className="middleware-content">
+
+                {/* Theory Section */}
                 <div className="theory-block">
-                    <h2 className="section-title">Understanding Middleware</h2>
+                    <h2 className="section-title">What is Middleware?</h2>
                     <p className="section-description">
-                        Middleware functions are functions that have access to the request object (req),
-                        the response object (res), and the next middleware function in the application's
-                        request-response cycle.
+                        Middleware functions are special functions in Express.js that have access to the 
+                        request object <code>(req)</code>, the response object <code>(res)</code>, and 
+                        the <code>next()</code> function. They sit in between the incoming request and the 
+                        final route handler, and can:
+                    </p>
+                    <ul>
+                        <li>Log information (e.g., request details)</li>
+                        <li>Authenticate users</li>
+                        <li>Parse request bodies (like JSON)</li>
+                        <li>Handle errors gracefully</li>
+                    </ul>
+                </div>
+
+                {/* Real-World JWT Example */}
+                <div className="implementation-block">
+                    <h2 className="section-title">Real-World Example: Token Authentication Middleware</h2>
+                    <p className="section-description">
+                        In real applications, middleware is often used for authentication. 
+                        Below is a middleware that verifies a JWT (JSON Web Token) 
+                        to protect certain routes.
                     </p>
 
-                    <div >
-                        <div className="code-header">
-                            <span className="file-name">middleware.js</span>
-                        </div>
-                        <SyntaxHighlighter language="javascript" style={atomDark}>
-                            {`const express = require('express');
-const app = express();
+                    <div className="code-header">
+                        <span className="file-name">authMiddleware.js</span>
+                    </div>
+                    <SyntaxHighlighter language="javascript" style={atomDark}>
+{`const jwt = require('jsonwebtoken');
 
-// Custom middleware
-const loggerMiddleware = (req, res, next) => {
-    console.log(\`[\${new Date().toISOString()}] \${req.method} \${req.url}\`);
-    next(); // Don't forget to call next()!
-};
-
-// Authentication middleware
 const authMiddleware = (req, res, next) => {
-    const authHeader = req.headers.authorization;
+    const authHeader = req.headers['authorization'];
     if (!authHeader) {
         return res.status(401).json({ error: 'No token provided' });
     }
-    req.user = { id: 1, name: 'John' };
-    next();
+
+    const token = authHeader.split(' ')[1]; // "Bearer <token>"
+    if (!token) {
+        return res.status(401).json({ error: 'Invalid token format' });
+    }
+
+    try {
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        req.user = decoded; // Attach user data to request
+        next();
+    } catch (err) {
+        return res.status(403).json({ error: 'Invalid or expired token' });
+    }
 };
 
-// Using middleware
-app.use(loggerMiddleware);
-app.use(express.json()); // Built-in middleware
-app.use('/api', authMiddleware); // Route-specific middleware`}</SyntaxHighlighter>
+module.exports = authMiddleware;`}
+                    </SyntaxHighlighter>
+
+                    <div className="code-header">
+                        <span className="file-name">app.js</span>
                     </div>
+                    <SyntaxHighlighter language="javascript" style={atomDark}>
+{`const express = require('express');
+const jwt = require('jsonwebtoken');
+const authMiddleware = require('./authMiddleware');
+const app = express();
+
+app.use(express.json());
+
+// Dummy login route: returns JWT token
+app.post('/login', (req, res) => {
+    const { username, password } = req.body;
+    if (username === 'kartik' && password === '1234') {
+        const token = jwt.sign(
+            { id: 1, username: 'kartik' },
+            process.env.JWT_SECRET,
+            { expiresIn: '1h' }
+        );
+        return res.json({ token });
+    }
+    res.status(401).json({ error: 'Invalid credentials' });
+});
+
+// Protected route
+app.get('/profile', authMiddleware, (req, res) => {
+    res.json({ message: 'Welcome!', user: req.user });
+});
+
+app.listen(5000, () => console.log('Server running on port 5000'));`}
+                    </SyntaxHighlighter>
                 </div>
 
+                {/* Common Middleware Packages */}
                 <div className="implementation-block">
-                    <h2 className="section-title">Common Middleware Packages</h2>
-                    <div>
-                        <SyntaxHighlighter language="javascript" style={atomDark}>npm install cors morgan helmet</SyntaxHighlighter>
-                    </div>
+                    <h2 className="section-title">Commonly Used Middleware Packages</h2>
+                    <p className="section-description">
+                        Express has many helpful middleware packages that are commonly used:
+                    </p>
+                    <SyntaxHighlighter language="bash" style={atomDark}>
+{`npm install cors morgan helmet`}
+                    </SyntaxHighlighter>
 
-                    <div >
-                        <div className="code-header">
-                            <span className="file-name">app.js</span>
-                        </div>
-                        <SyntaxHighlighter language="javascript" style={atomDark}>
-                            {`const express = require('express');
-const cors = require('cors');
+                    <div className="code-header">
+                        <span className="file-name">app.js</span>
+                    </div>
+                    <SyntaxHighlighter language="javascript" style={atomDark}>
+{`const cors = require('cors');
 const morgan = require('morgan');
 const helmet = require('helmet');
 
-const app = express();
-
-// Security headers
-app.use(helmet());
-
-// CORS middleware
-app.use(cors());
-
-// Logging middleware
-app.use(morgan('dev'));`}</SyntaxHighlighter>
-                    </div>
+app.use(helmet());   // Adds security headers
+app.use(cors());     // Enables CORS
+app.use(morgan('dev')); // Logs requests`}
+                    </SyntaxHighlighter>
                 </div>
             </section>
         </div>

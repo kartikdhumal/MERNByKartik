@@ -16,7 +16,7 @@ function AsyncAwait() {
             <section className="method-section">
                 <h2 className="method-title">1. Async Functions</h2>
                 <p>
-                    Async functions always return a promise. The <SyntaxHighlighter language="javascript" style={atomDark}>await</SyntaxHighlighter> keyword is used only in async functions to wait for a promise.
+                    Async functions always return a promise. The await keyword is used only in async functions to wait for a promise.
                     Async functions will always return a value, wrapping it in a promise if necessary.
                 </p>
                 
@@ -36,7 +36,7 @@ function AsyncAwait() {
             <section className="method-section">
                 <h2 className="method-title">2. Await</h2>
                 <p>
-                    The <SyntaxHighlighter language="javascript" style={atomDark}>await</SyntaxHighlighter> keyword pauses the execution of the async function until the promise is resolved.
+                    The await keyword pauses the execution of the async function until the promise is resolved.
                 </p>
                 
                     <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -53,7 +53,7 @@ run();`}
             <section className="method-section">
                 <h2 className="method-title">3. Error Handling</h2>
                 <p>
-                    Async functions can use <SyntaxHighlighter language="javascript" style={atomDark}>try/catch</SyntaxHighlighter> blocks to handle errors in a more synchronous style.
+                    Async functions can use try/catch blocks to handle errors in a more synchronous style.
                 </p>
                 
                     <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -100,7 +100,7 @@ runChained();`}
             <section className="method-section">
                 <h2 className="method-title">5. Parallel Execution</h2>
                 <p>
-                    To run async functions in parallel, you can use <SyntaxHighlighter language="javascript" style={atomDark}>Promise.all</SyntaxHighlighter>.
+                    To run async functions in parallel, you can use Promise.all.
                 </p>
                 
                     <SyntaxHighlighter language="javascript" style={atomDark}>

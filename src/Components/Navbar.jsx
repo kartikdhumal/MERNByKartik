@@ -125,14 +125,6 @@ function Navbar({ name }) {
                     </div>
                 </div>
                 <div className="navbar-section">
-                    <h1 className="navbar-title">Interview Questions</h1>
-                    <div className="navbar-links">
-                        <div className="navbar-item">
-                            <Link to="/improvement" className="navbar-link">Interview Questions</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="navbar-section">
                     <h1 className="navbar-title">DSA</h1>
                     <div className="navbar-links">
                         <div className="navbar-item">
@@ -141,9 +133,19 @@ function Navbar({ name }) {
                     </div>
                 </div>
                 <div className="navbar-section">
-                    <h1 className="navbar-title">SQL</h1>
+                    <h1 className="navbar-title">DBMS , OS , Networking</h1>
                     <div className="navbar-links">
-                        <div className="navbar-item"><Link to="/qna" className="navbar-link">Database, OS , Networking</Link></div>
+                        <div className="navbar-item"><Link to="/qna" className="navbar-link">DBMS & SQL</Link></div>
+                        <div className="navbar-item"><Link to="/operatingsystem" className="navbar-link">Operating System</Link></div>
+                        <div className="navbar-item"><Link to="/networking" className="navbar-link">Networking</Link></div>
+                    </div>
+                </div>
+                                <div className="navbar-section">
+                    <h1 className="navbar-title">Interview Questions</h1>
+                    <div className="navbar-links">
+                        <div className="navbar-item">
+                            <Link to="/improvement" className="navbar-link">Interview Questions</Link>
+                        </div>
                     </div>
                 </div>
             </div>

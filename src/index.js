@@ -67,6 +67,8 @@ import Debouncing from './Components/Debouncing';
 import ErrorBoundaryInfo from './Components/ErrorBoundaryInfo';
 import PropsInfo from './Components/PropsInfo';
 import ReactBestPractises from './Components/ReactBestPractises';
+import Networking from './Components/Networking';
+import OperatingSystem from './Components/OperatingSystem';
 
 const LazyLoading = lazy(() => import('./Components/LazyLoading'));
 
@@ -93,6 +95,14 @@ export const myRouter = createBrowserRouter([
   {
     path: '/bind-function',
     element: <BindFunction />,
+  },
+  {
+    path:'/networking',
+    element: <Networking/>
+  },
+  {
+     path:'/operatingsystem',
+     element:<OperatingSystem/>
   },
   {
     path: '/callback',

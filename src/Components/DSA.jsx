@@ -8,7 +8,7 @@ import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 function DSA() {
 
     useEffect(() => {
-    
+
         window.scrollTo(0, 0);
     }, []);
 
@@ -19,45 +19,106 @@ function DSA() {
                 This component covers some important concepts in Data Structures and Algorithms, providing definitions and explanations.
             </p>
 
+            <div className="debounce-container">
+                <h1 className="section-title">DSA Concepts</h1>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is a Data Structure?</h3>
+                    <p className="faq-answer">
+                        A way of organizing and storing data so that it can be accessed and modified efficiently.
+                        Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is an Algorithm?</h3>
+                    <p className="faq-answer">
+                        A step-by-step procedure or formula for solving a problem.
+                        Algorithms can be expressed in natural language, pseudocode, or programming languages.
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is Time Complexity?</h3>
+                    <p className="faq-answer">
+                        A computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input.
+                        It's often expressed using Big O notation (e.g., O(n), O(log n)).
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is Space Complexity?</h3>
+                    <p className="faq-answer">
+                        A computational complexity that describes the amount of memory space an algorithm uses in relation to the input size.
+                        Like time complexity, it's expressed using Big O notation.
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is an Array?</h3>
+                    <p className="faq-answer">
+                        A collection of items stored at contiguous memory locations. It allows for easy access to elements via indices.
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is a Linked List?</h3>
+                    <p className="faq-answer">
+                        A linear data structure where each element (node) points to the next one, allowing for dynamic memory allocation and efficient insertions/deletions.
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is a Stack?</h3>
+                    <p className="faq-answer">
+                        A collection of elements that follows the Last In, First Out (LIFO) principle, where the last element added is the first to be removed.
+                        It supports operations like push (add) and pop (remove).
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is a Queue?</h3>
+                    <p className="faq-answer">
+                        A collection of elements that follows the First In, First Out (FIFO) principle, where the first element added is the first to be removed.
+                        It supports operations like enqueue (add) and dequeue (remove).
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is a Tree?</h3>
+                    <p className="faq-answer">
+                        A hierarchical data structure with nodes connected by edges. Each tree has a root node, and nodes can have children, forming a parent-child relationship.
+                        Common types include binary trees, binary search trees, and balanced trees.
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What is a Graph?</h3>
+                    <p className="faq-answer">
+                        A collection of nodes (vertices) connected by edges. Graphs can be directed or undirected and are used to represent relationships in networks,
+                        such as social media connections or transportation systems.
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What are Sorting Algorithms?</h3>
+                    <p className="faq-answer">
+                        Algorithms used to arrange elements in a specific order (ascending or descending).
+                        Common sorting algorithms include Bubble Sort, Merge Sort, Quick Sort, and Insertion Sort.
+                    </p>
+                </div>
+
+                <div className="faq-item">
+                    <h3 className="faq-question">What are Searching Algorithms?</h3>
+                    <p className="faq-answer">
+                        Algorithms used to find a specific element in a data structure. Common searching algorithms include Linear Search and Binary Search.
+                    </p>
+                </div>
+            </div>
+
+
             <h2>Key Definitions</h2>
-            <ul>
-                <li>
-                    Data Structure: A way of organizing and storing data so that it can be accessed and modified efficiently. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.
-                </li>
-                <li>
-                    Algorithm: A step-by-step procedure or formula for solving a problem. Algorithms can be expressed in natural language, pseudocode, or programming languages.
-                </li>
-                <li>
-                    Time Complexity: A computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input. It's often expressed using Big O notation (e.g., O(n), O(log n)).
-                </li>
-                <li>
-                    Space Complexity: A computational complexity that describes the amount of memory space an algorithm uses in relation to the input size. Like time complexity, it's expressed using Big O notation.
-                </li>
-                <li>
-                    Array: A collection of items stored at contiguous memory locations. It allows for easy access to elements via indices.
-                </li>
-                <li>
-                    Linked List: A linear data structure where each element (node) points to the next one, allowing for dynamic memory allocation and efficient insertions/deletions.
-                </li>
-                <li>
-                    Stack: A collection of elements that follows the Last In, First Out (LIFO) principle, where the last element added is the first to be removed. It supports operations like push (add) and pop (remove).
-                </li>
-                <li>
-                    Queue: A collection of elements that follows the First In, First Out (FIFO) principle, where the first element added is the first to be removed. It supports operations like enqueue (add) and dequeue (remove).
-                </li>
-                <li>
-                    Tree: A hierarchical data structure with nodes connected by edges. Each tree has a root node, and nodes can have children, forming a parent-child relationship. Common types include binary trees, binary search trees, and balanced trees.
-                </li>
-                <li>
-                    Graph: A collection of nodes (vertices) connected by edges. Graphs can be directed or undirected and are used to represent relationships in networks, such as social media connections or transportation systems.
-                </li>
-                <li>
-                    Sorting Algorithms: Algorithms used to arrange elements in a specific order (ascending or descending). Common sorting algorithms include Bubble Sort, Merge Sort, Quick Sort, and Insertion Sort.
-                </li>
-                <li>
-                    Searching Algorithms: Algorithms used to find a specific element in a data structure. Common searching algorithms include Linear Search and Binary Search.
-                </li>
-            </ul>
+
 
             <div className="shadowing-container">
                 <h2>1. Bubble Sort</h2>
@@ -84,9 +145,9 @@ function DSA() {
                 <p>The space complexity of Bubble Sort is O(1) since it only requires a constant amount of additional space for the temporary variables used for swapping.</p>
 
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`function bubbleSort(arr) {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`function bubbleSort(arr) {
   let n = arr.length;
 
   for(let i=0; i<n-1; i++){
@@ -102,8 +163,8 @@ function DSA() {
 const array = [64, 34, 25, 12, 22, 11, 90];
 const sortedArray = bubbleSort(array);
 console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
 
@@ -133,9 +194,9 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
                 <p>The space complexity of Selection Sort is O(1) since it only requires a constant amount of additional space for the temporary variable used for swapping elements.</p>
 
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`function selectionSort(arr) {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`function selectionSort(arr) {
     for (let i = 0; i < arr.length; i++) {
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[i] > arr[j]) {
@@ -151,8 +212,8 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
 const array = [64, 25, 12, 22, 11];
 const sortedArray = selectionSort(array);
 console.log(sortedArray); // Output: [11, 12, 22, 25, 64]`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
 
@@ -185,9 +246,9 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 64]`}
                 </p>
 
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`function insertionSort(arr) {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`function insertionSort(arr) {
     for (let i = 0; i < arr.length; i++) {
         let j = i;
         while (j > 0 && arr[j - 1] > arr[j]) {
@@ -203,8 +264,8 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 64]`}
 const array = [64, 25, 12, 22, 11];
 const sortedArray = insertionSort(array);
 console.log(sortedArray); // Output: [11, 12, 22, 25, 64]`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
             <div className="shadowing-container">
                 <h2>4. Quick Sort</h2>
@@ -222,9 +283,9 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 64]`}
                 <h3>Space Complexity</h3>
                 <p>The space complexity of Quick Sort is O(log n) due to the recursive stack space.</p>
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`function quickSort(arr) {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`function quickSort(arr) {
     if (arr.length <= 1) return arr;
 
     const pivot = arr[arr.length - 1];
@@ -244,8 +305,8 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 64]`}
 const array = [64, 34, 25, 12, 22, 11, 90];
 const sortedArray = quickSort(array);
 console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
             {/* Merge Sort Section */}
@@ -264,9 +325,9 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
                 <h3>Space Complexity</h3>
                 <p>The space complexity of Merge Sort is O(n) due to the temporary arrays used for merging.</p>
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`function mergeSort(arr) {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`function mergeSort(arr) {
     if (arr.length <= 1) return arr;
 
     const mid = Math.floor(arr.length / 2);
@@ -296,8 +357,8 @@ function merge(left, right) {
 const array = [64, 34, 25, 12, 22, 11, 90];
 const sortedArray = mergeSort(array);
 console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
             {/* Stack Section */}
@@ -313,9 +374,9 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]`}
                     <li>Peek: Returns the top element without removing it.</li>
                 </ul>
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`class Stack {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`class Stack {
     constructor() {
         this.items = [];
     }
@@ -344,8 +405,8 @@ stack.push(1);
 stack.push(2);
 console.log(stack.pop()); // Output: 2
 console.log(stack.peek()); // Output: 1`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
             {/* Queue Section */}
@@ -361,9 +422,9 @@ console.log(stack.peek()); // Output: 1`}
                     <li>Front: Returns the front element without removing it.</li>
                 </ul>
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`class Queue {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`class Queue {
     constructor() {
         this.items = [];
     }
@@ -392,8 +453,8 @@ queue.enqueue(1);
 queue.enqueue(2);
 console.log(queue.dequeue()); // Output: 1
 console.log(queue.front()); // Output: 2`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
             {/* Linked List Section */}
@@ -409,9 +470,9 @@ console.log(queue.front()); // Output: 2`}
                     <li>Search: Searches for a node in the linked list.</li>
                 </ul>
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`class Node {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`class Node {
     constructor(data) {
         this.data = data;
         this.next = null;
@@ -469,8 +530,8 @@ list.insert(2);
 console.log(list.search(2)); // Output: true
 list.delete(1);
 console.log(list.search(1)); // Output: false`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
             {/* Doubly Linked List Section */}
@@ -486,9 +547,9 @@ console.log(list.search(1)); // Output: false`}
                     <li>Search: Searches for a node in the doubly linked list.</li>
                 </ul>
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`class DoublyNode {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`class DoublyNode {
     constructor(data) {
         this.data = data;
         this.next = null;
@@ -554,8 +615,8 @@ doublyList.insert(2);
 console.log(doublyList.search(2)); // Output: true
 doublyList.delete(1);
 console.log(doublyList.search(1)); // Output: false`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
             {/* Tree Section */}
@@ -571,9 +632,9 @@ console.log(doublyList.search(1)); // Output: false`}
                     <li>Search: Searches for a node in the tree.</li>
                 </ul>
                 <h3>Implementation</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`class TreeNode {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`class TreeNode {
     constructor(data) {
         this.data = data;
         this.left = null;
@@ -633,8 +694,8 @@ tree.insert(5);
 tree.insert(15);
 console.log(tree.search(15)); // Output: true
 console.log(tree.search(20)); // Output: false`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
             {/* Graph Section */}
@@ -649,9 +710,9 @@ console.log(tree.search(20)); // Output: false`}
                     <li>Adjacency Matrix: A 2D array where each cell represents the presence of an edge between nodes.</li>
                 </ul>
                 <h3>Implementation (Adjacency List)</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`class Graph {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`class Graph {
     constructor() {
         this.adjacencyList = {};
     }
@@ -677,12 +738,12 @@ graph.addVertex('A');
 graph.addVertex('B');
 graph.addEdge('A', 'B');
 console.log(graph.adjacencyList); // Output: { A: [ 'B' ], B: [ 'A' ] }`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
                 <h3>Implementation (Adjacency Matrix)</h3>
-                
-                    <SyntaxHighlighter language="javascript" style={atomDark}>
-                        {`class AdjacencyMatrixGraph {
+
+                <SyntaxHighlighter language="javascript" style={atomDark}>
+                    {`class AdjacencyMatrixGraph {
     constructor() {
         this.adjacencyMatrix = [];
         this.vertexCount = 0;
@@ -711,8 +772,8 @@ matrixGraph.addVertex(); // Vertex 0
 matrixGraph.addVertex(); // Vertex 1
 matrixGraph.addEdge(0, 1);
 matrixGraph.printMatrix(); // Output: [[0, 1], [1, 0]}  // Adjacency matrix`}
-                    </SyntaxHighlighter>
-                
+                </SyntaxHighlighter>
+
             </div>
 
         </div>
